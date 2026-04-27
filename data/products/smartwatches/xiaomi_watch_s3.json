@@ -1,0 +1,33 @@
+{
+  "id": "xiaomi_watch_s3",
+  "name": {
+    "uk": "Xiaomi Watch S3",
+    "en": "Xiaomi Watch S3",
+    "ru": "Xiaomi Watch S3"
+  },
+  "brand": "Xiaomi",
+  "category": "smartwatches",
+  "price": 7499,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 112,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Стильний розумний годинник з AMOLED-дисплеєм і підтримкою Alexa.",
+    "en": "Stylish smartwatch with AMOLED display and Alexa support.",
+    "ru": "Стильные смарт-часы с AMOLED-дисплеем и поддержкой Alexa."
+  },
+  "features": {
+    "uk": ["AMOLED-дисплей 1.43”", "Bluetooth 5.2", "Пульс і SpO₂", "До 15 днів роботи", "Підтримка Alexa"],
+    "en": ["1.43” AMOLED display", "Bluetooth 5.2", "Heart rate & SpO₂", "15 days battery", "Alexa support"],
+    "ru": ["1.43” AMOLED-дисплей", "Bluetooth 5.2", "Пульс и SpO₂", "15 дней работы", "Alexa"]
+  },
+  "images": [
+    "../images/products/smartwatches/xiaomi_watch_s3/1.jpeg",
+    "../images/products/smartwatches/xiaomi_watch_s3/2.jpeg",
+    "../images/products/smartwatches/xiaomi_watch_s3/3.jpeg"
+  ]
+}

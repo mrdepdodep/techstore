@@ -1,0 +1,43 @@
+{
+  "id": "iphone15pro",
+  "name": {
+    "uk": "iPhone 15 Pro",
+    "en": "iPhone 15 Pro",
+    "ru": "iPhone 15 Pro"
+  },
+  "brand": "Apple",
+  "category": "phones",
+  "price": 49999,
+  "oldPrice": 54999,
+  "discount": 9,
+  "rating": 4.9,
+  "reviews": 124,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Флагманський смартфон з процесором A17 Pro, титановим корпусом і камерою 48 Мп.",
+    "en": "Flagship smartphone with A17 Pro chip, titanium frame, and 48 MP camera.",
+    "ru": "Флагманский смартфон с процессором A17 Pro, титановым корпусом и камерой 48 Мп."
+  },
+  "features": {
+    "uk": ["6.1\" OLED 120 Гц дисплей", "Процесор A17 Pro", "Камера 48 Мп", "USB-C зарядка", "Підтримка 5G"],
+    "en": ["6.1\" OLED 120Hz display", "A17 Pro chip", "48 MP camera", "USB-C charging", "5G support"],
+    "ru": ["6.1\" OLED 120 Гц дисплей", "Чип A17 Pro", "Камера 48 Мп", "Зарядка USB-C", "Поддержка 5G"]
+  },
+  "images": [
+    "../images/products/phones/iphone15pro/1.png",
+    "../images/products/phones/iphone15pro/2.png",
+    "../images/products/phones/iphone15pro/3.jpeg"
+  ],
+  "specifications": {
+    "Процесор": "Apple A17 Pro",
+    "Екран": "6.1\" OLED 120 Гц",
+    "Камера": "48 Мп + 12 Мп + 12 Мп",
+    "ОЗУ": "8 ГБ",
+    "Накопичувач": "256 ГБ",
+    "Батарея": "3274 мА·г",
+    "ОС": "iOS 17",
+    "Вага": "187 г"
+  }
+}

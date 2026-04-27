@@ -1,0 +1,29 @@
+{
+  "id": "sony_xperia1v",
+  "name": { "uk": "Sony Xperia 1 V", "en": "Sony Xperia 1 V", "ru": "Sony Xperia 1 V" },
+  "brand": "Sony",
+  "category": "phones",
+  "price": 48999,
+  "oldPrice": 52999,
+  "discount": 8,
+  "rating": 4.7,
+  "reviews": 78,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Флагман Sony із кінематографічним дисплеєм 4K OLED та професійною камерою.",
+    "en": "Sony flagship with 4K OLED cinematic display and pro-grade camera.",
+    "ru": "Флагман Sony с 4K OLED дисплеем и профессиональной камерой."
+  },
+  "features": {
+    "uk": ["6.5” 4K OLED 120 Гц", "Snapdragon 8 Gen 2", "Камера 52 Мп", "3.5 мм аудіо", "IP68"],
+    "en": ["6.5” 4K OLED 120Hz", "Snapdragon 8 Gen 2", "52 MP camera", "3.5 mm audio", "IP68"],
+    "ru": ["6.5” 4K OLED 120 Гц", "Snapdragon 8 Gen 2", "Камера 52 Мп", "3.5 мм аудио", "IP68"]
+  },
+  "images": [
+    "../images/products/phones/xperia1v/1.jpeg",
+    "../images/products/phones/xperia1v/2.jpeg",
+    "../images/products/phones/xperia1v/3.jpeg"
+  ]
+}

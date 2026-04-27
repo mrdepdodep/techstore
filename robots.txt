@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Internal / utility paths
+Disallow: /node_modules/
+
+# User-state pages
+Disallow: /favorites/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /order-success/
+Disallow: /compare/
+
+Sitemap: https://mrdepdodep.github.io/techstore/sitemap.xml

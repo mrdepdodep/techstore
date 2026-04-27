@@ -1,0 +1,33 @@
+{
+  "id": "boseQuietComfort45",
+  "name": {
+    "uk": "Bose QuietComfort 45",
+    "en": "Bose QuietComfort 45",
+    "ru": "Bose QuietComfort 45"
+  },
+  "brand": "Bose",
+  "category": "headphones",
+  "price": 15999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 187,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Комфортні накладні навушники з активним шумозаглушенням та м’якими амбушюрами.",
+    "en": "Comfortable over-ear headphones with active noise cancellation and soft ear cushions.",
+    "ru": "Удобные накладные наушники с активным шумоподавлением и мягкими амбушюрами."
+  },
+  "features": {
+    "uk": ["ANC", "До 24 годин роботи", "Bluetooth 5.1", "Зручна посадка", "Підтримка швидкої зарядки"],
+    "en": ["ANC", "Up to 24h battery", "Bluetooth 5.1", "Comfortable fit", "Fast charging support"],
+    "ru": ["ANC", "До 24 ч работы", "Bluetooth 5.1", "Удобная посадка", "Быстрая зарядка"]
+  },
+  "images": [
+    "../images/products/headphones/boseQuietComfort45/1.jpeg",
+    "../images/products/headphones/boseQuietComfort45/2.jpeg",
+    "../images/products/headphones/boseQuietComfort45/3.jpeg"
+  ]
+}

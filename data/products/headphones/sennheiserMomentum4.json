@@ -1,0 +1,33 @@
+{
+  "id": "sennheiserMomentum4",
+  "name": {
+    "uk": "Sennheiser Momentum 4",
+    "en": "Sennheiser Momentum 4",
+    "ru": "Sennheiser Momentum 4"
+  },
+  "brand": "Sennheiser",
+  "category": "headphones",
+  "price": 17999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 91,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Навушники преміум-класу з кришталево чистим звуком та ANC.",
+    "en": "Premium over-ear headphones with crystal clear sound and ANC.",
+    "ru": "Премиальные наушники с кристально чистым звуком и ANC."
+  },
+  "features": {
+    "uk": ["До 60 годин роботи", "Bluetooth 5.2", "USB-C зарядка", "Комфортна посадка"],
+    "en": ["Up to 60h battery", "Bluetooth 5.2", "USB-C charging", "Comfortable fit"],
+    "ru": ["До 60 ч работы", "Bluetooth 5.2", "USB-C зарядка", "Удобная посадка"]
+  },
+  "images": [
+    "../images/products/headphones/sennheiserMomentum4/1.jpeg",
+    "../images/products/headphones/sennheiserMomentum4/2.jpeg",
+    "../images/products/headphones/sennheiserMomentum4/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "webcam1080p",
+  "name": {
+    "uk": "Вебкамера 1080p",
+    "en": "Webcam 1080p",
+    "ru": "Вебкамера 1080p"
+  },
+  "brand": "Logitech",
+  "category": "accessories",
+  "price": 2299,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 143,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Full HD вебкамера з автофокусом і мікрофоном для відеодзвінків.",
+    "en": "Full HD webcam with autofocus and microphone for video calls.",
+    "ru": "Full HD вебкамера с автофокусом и микрофоном для видеозвонков."
+  },
+  "features": {
+    "uk": ["Роздільна здатність 1080p", "Мікрофон зі шумозаглушенням", "USB-підключення", "Сумісність з Windows/macOS"],
+    "en": ["1080p resolution", "Noise-cancelling mic", "USB connection", "Compatible with Windows/macOS"],
+    "ru": ["Разрешение 1080p", "Микрофон с шумоподавлением", "USB-подключение", "Совместима с Windows/macOS"]
+  },
+  "images": [
+    "../images/products/accessories/webcam1080p/1.png",
+    "../images/products/accessories/webcam1080p/2.png",
+    "../images/products/accessories/webcam1080p/3.png"
+  ]
+}

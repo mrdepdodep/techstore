@@ -1,0 +1,411 @@
+/* ============================================
+   TechStore - Components (ОПТИМІЗОВАНО)
+   Тільки УНІКАЛЬНІ компоненти без дублювання
+   ============================================ */
+
+/* ВАЖЛИВО: styles.css містить всі базові стилі */
+
+/* ============================================
+   Toast Notification (Унікальний компонент)
+   ============================================ */
+.toast {
+  position: fixed !important;
+  top: 100px !important;
+  right: -400px !important;
+  max-width: 350px !important;
+  width: 100% !important;
+  background: var(--bg-primary) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  padding: var(--spacing-md) !important;
+  display: flex !important;
+  gap: var(--spacing-md) !important;
+  align-items: start !important;
+  z-index: 10000 !important;
+  transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+.toast.show {
+  right: var(--spacing-md) !important;
+}
+
+.toast-icon {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(46, 204, 113, 0.1) !important;
+  color: var(--success-color) !important;
+  border-radius: var(--radius-full) !important;
+  font-size: 1.25rem !important;
+  flex-shrink: 0 !important;
+}
+
+.toast-content {
+  flex: 1 !important;
+}
+
+.toast-title {
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.toast-message {
+  font-size: var(--font-size-sm) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* ============================================
+   Loading Overlay (Унікальний компонент)
+   ============================================ */
+.loading-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(4px) !important;
+  display: none !important;
+  z-index: 9999 !important;
+}
+
+.loading-overlay.show {
+  display: flex !important;
+}
+
+.loading-spinner {
+  text-align: center !important;
+  color: white !important;
+}
+
+.loading-spinner i {
+  font-size: 3rem !important;
+  margin-bottom: 1rem !important;
+  animation: spin 1s linear infinite !important;
+}
+
+/* ============================================
+   Pagination (Унікальний компонент)
+   ============================================ */
+.pagination {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  margin-top: var(--spacing-xl) !important;
+}
+
+.pagination-btn {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  background: var(--bg-secondary) !important;
+  cursor: pointer !important;
+  transition: var(--transition-base) !important;
+  font-weight: 600 !important;
+  font-size: var(--font-size-sm) !important;
+  color: var(--text-secondary) !important;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background: var(--bg-primary) !important;
+}
+
+.pagination-btn.active {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)) !important;
+  border-color: transparent !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35) !important;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.25 !important;
+  cursor: not-allowed !important;
+}
+
+/* ============================================
+   Tabs (Унікальний компонент)
+   ============================================ */
+.tabs-nav {
+  display: flex !important;
+  gap: 0.5rem !important;
+  border-bottom: 2px solid var(--border-color) !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+.tab-btn {
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  margin-bottom: -2px !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  transition: var(--transition-base) !important;
+}
+
+.tab-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.tab-btn.active {
+  color: var(--primary-color) !important;
+  border-bottom-color: var(--primary-color) !important;
+}
+
+.tab-panel {
+  display: none !important;
+}
+
+.tab-panel.active {
+  display: block !important;
+  animation: fadeIn 0.3s ease !important;
+}
+
+/* ============================================
+   Alerts (Унікальні компоненти)
+   ============================================ */
+.alert {
+  padding: var(--spacing-md) !important;
+  border-radius: var(--radius-md) !important;
+  margin-bottom: var(--spacing-md) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--spacing-sm) !important;
+}
+
+.alert-success {
+  background: rgba(46, 204, 113, 0.1) !important;
+  color: var(--success-color) !important;
+  border: 1px solid var(--success-color) !important;
+}
+
+.alert-warning {
+  background: rgba(243, 156, 18, 0.1) !important;
+  color: var(--warning-color) !important;
+  border: 1px solid var(--warning-color) !important;
+}
+
+.alert-danger {
+  background: rgba(231, 76, 60, 0.1) !important;
+  color: var(--danger-color) !important;
+  border: 1px solid var(--danger-color) !important;
+}
+
+.alert-info {
+  background: rgba(52, 152, 219, 0.1) !important;
+  color: var(--info-color) !important;
+  border: 1px solid var(--info-color) !important;
+}
+
+[data-theme="dark"] .alert-success {
+  background: rgba(46, 204, 113, 0.15) !important;
+}
+
+[data-theme="dark"] .alert-warning {
+  background: rgba(243, 156, 18, 0.15) !important;
+}
+
+[data-theme="dark"] .alert-danger {
+  background: rgba(231, 76, 60, 0.15) !important;
+}
+
+[data-theme="dark"] .alert-info {
+  background: rgba(52, 152, 219, 0.15) !important;
+}
+
+/* ============================================
+   Form Specific Components
+   ============================================ */
+.form-group {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.form-label {
+  display: block !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 500 !important;
+  color: var(--text-primary) !important;
+}
+
+.form-input:disabled,
+.form-select:disabled,
+.form-textarea:disabled {
+  background: var(--bg-secondary) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+.form-textarea {
+  resize: vertical !important;
+  min-height: 100px !important;
+}
+
+.form-error {
+  display: block !important;
+  margin-top: 0.25rem !important;
+  color: var(--danger-color) !important;
+  font-size: var(--font-size-sm) !important;
+}
+
+.form-input.error {
+  border-color: var(--danger-color) !important;
+}
+
+.form-checkbox,
+.form-radio {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  cursor: pointer !important;
+}
+
+.form-checkbox input[type="checkbox"],
+.form-radio input[type="radio"] {
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer !important;
+  accent-color: var(--primary-color) !important;
+}
+
+.required {
+  color: var(--danger-color) !important;
+  margin-left: 0.25rem !important;
+}
+
+/* ============================================
+   Button Variants (Додаткові)
+   ============================================ */
+.btn-ghost {
+  background: transparent !important;
+  color: var(--text-primary) !important;
+  border-color: transparent !important;
+}
+
+.btn-ghost:hover {
+  background: var(--bg-secondary) !important;
+}
+
+.btn-icon {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  border-radius: var(--radius-md) !important;
+}
+
+/* ============================================
+   Modal Specific Components
+   ============================================ */
+.modal-icon {
+  width: 64px !important;
+  height: 64px !important;
+  margin: 0 auto var(--spacing-md) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--bg-secondary) !important;
+  border-radius: var(--radius-full) !important;
+  font-size: 2rem !important;
+  color: var(--primary-color) !important;
+}
+
+.modal-icon.success {
+  color: var(--success-color) !important;
+  background: rgba(46, 204, 113, 0.1) !important;
+}
+
+.modal-title {
+  font-size: var(--font-size-2xl) !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: var(--spacing-sm) !important;
+}
+
+.modal-text {
+  text-align: center !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+.modal-actions {
+  display: flex !important;
+  gap: var(--spacing-sm) !important;
+}
+
+.modal-actions .btn {
+  flex: 1 !important;
+}
+
+/* ============================================
+   Empty State Actions
+   ============================================ */
+.empty-actions {
+  display: flex !important;
+  gap: var(--spacing-sm) !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+/* ============================================
+   Responsive - Components
+   ============================================ */
+@media (max-width: 768px) {
+  .toast {
+    max-width: 90% !important;
+  }
+
+  .pagination {
+    gap: 0.25rem !important;
+  }
+
+  .pagination-btn {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: var(--font-size-sm) !important;
+  }
+
+  .tabs-nav {
+    flex-wrap: wrap !important;
+  }
+
+  .tab-btn {
+    flex: 1 !important;
+    min-width: 100px !important;
+  }
+
+  .modal-content {
+    max-width: 90% !important;
+    padding: var(--spacing-lg) !important;
+  }
+
+  .empty-actions {
+    flex-direction: column !important;
+  }
+
+  .empty-actions .btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.625rem 1rem !important;
+    font-size: var(--font-size-sm) !important;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem !important;
+  }
+
+  .modal-content {
+    padding: var(--spacing-md) !important;
+  }
+}

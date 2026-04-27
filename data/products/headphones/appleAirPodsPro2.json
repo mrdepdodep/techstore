@@ -1,0 +1,33 @@
+{
+  "id": "appleAirPodsPro2",
+  "name": {
+    "uk": "Apple AirPods Pro 2",
+    "en": "Apple AirPods Pro 2",
+    "ru": "Apple AirPods Pro 2"
+  },
+  "brand": "Apple",
+  "category": "headphones",
+  "price": 10999,
+  "oldPrice": 12999,
+  "discount": 15,
+  "rating": 4.8,
+  "reviews": 312,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Безпровідні навушники з шумозаглушенням, новим чіпом H2 і підтримкою Spatial Audio.",
+    "en": "Wireless earbuds with noise cancellation, H2 chip, and Spatial Audio support.",
+    "ru": "Беспроводные наушники с шумоподавлением, чипом H2 и поддержкой Spatial Audio."
+  },
+  "features": {
+    "uk": ["Активне шумозаглушення", "Чіп H2", "До 6 годин роботи", "Spatial Audio", "Магнітний кейс"],
+    "en": ["Active Noise Cancellation", "H2 chip", "Up to 6 hours battery", "Spatial Audio", "MagSafe case"],
+    "ru": ["Активное шумоподавление", "Чип H2", "До 6 часов работы", "Spatial Audio", "Магнитный кейс"]
+  },
+  "images": [
+    "../images/products/headphones/appleAirPodsPro2/1.jpeg",
+    "../images/products/headphones/appleAirPodsPro2/2.jpeg",
+    "../images/products/headphones/appleAirPodsPro2/3.jpeg"
+  ]
+}

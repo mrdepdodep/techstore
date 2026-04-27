@@ -1,0 +1,33 @@
+{
+  "id": "huaweiFreeBudsPro3",
+  "name": {
+    "uk": "Huawei FreeBuds Pro 3",
+    "en": "Huawei FreeBuds Pro 3",
+    "ru": "Huawei FreeBuds Pro 3"
+  },
+  "brand": "Huawei",
+  "category": "headphones",
+  "price": 7999,
+  "oldPrice": 9499,
+  "discount": 16,
+  "rating": 4.7,
+  "reviews": 164,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальні навушники з адаптивним ANC та покращеним звуком.",
+    "en": "Premium earbuds with adaptive ANC and improved sound quality.",
+    "ru": "Премиальные наушники с адаптивным ANC и улучшенным звуком."
+  },
+  "features": {
+    "uk": ["Адаптивне шумозаглушення", "Bluetooth 5.2", "До 7 годин роботи", "Захист IP54"],
+    "en": ["Adaptive ANC", "Bluetooth 5.2", "Up to 7h battery", "IP54 rating"],
+    "ru": ["Адаптивное шумоподавление", "Bluetooth 5.2", "До 7 ч работы", "IP54 защита"]
+  },
+  "images": [
+    "../images/products/headphones/huaweiFreeBudsPro3/1.jpeg",
+    "../images/products/headphones/huaweiFreeBudsPro3/2.jpeg",
+    "../images/products/headphones/huaweiFreeBudsPro3/2.jpeg"
+  ]
+}

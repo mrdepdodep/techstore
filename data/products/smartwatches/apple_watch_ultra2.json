@@ -1,0 +1,33 @@
+{
+  "id": "apple_watch_ultra2",
+  "name": {
+    "uk": "Apple Watch Ultra 2",
+    "en": "Apple Watch Ultra 2",
+    "ru": "Apple Watch Ultra 2"
+  },
+  "brand": "Apple",
+  "category": "smartwatches",
+  "price": 33999,
+  "oldPrice": 36999,
+  "discount": 8,
+  "rating": 4.9,
+  "reviews": 87,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Професійний годинник для екстриму з титановим корпусом та автономністю до 36 годин.",
+    "en": "Professional adventure smartwatch with titanium case and up to 36 hours battery life.",
+    "ru": "Профессиональные смарт-часы для экстрима с титановым корпусом и до 36 часов работы."
+  },
+  "features": {
+    "uk": ["Титановий корпус", "GPS подвійної частоти", "36 годин автономності", "Водозахист 100м", "Екран 2000 ніт"],
+    "en": ["Titanium case", "Dual-frequency GPS", "36h battery", "100m water resistance", "2000 nits display"],
+    "ru": ["Титановый корпус", "Двойной GPS", "36 часов автономности", "Водозащита 100м", "Экран 2000 нит"]
+  },
+  "images": [
+    "../images/products/smartwatches/apple_watch_ultra2/1.jpeg",
+    "../images/products/smartwatches/apple_watch_ultra2/2.jpeg",
+    "../images/products/smartwatches/apple_watch_ultra2/3.jpeg"
+  ]
+}

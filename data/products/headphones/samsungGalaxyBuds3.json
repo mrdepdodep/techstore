@@ -1,0 +1,33 @@
+{
+  "id": "samsungGalaxyBuds3",
+  "name": {
+    "uk": "Samsung Galaxy Buds 3",
+    "en": "Samsung Galaxy Buds 3",
+    "ru": "Samsung Galaxy Buds 3"
+  },
+  "brand": "Samsung",
+  "category": "headphones",
+  "price": 8499,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 94,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Компактні TWS-навушники з покращеним ANC і підтримкою Dolby Atmos.",
+    "en": "Compact TWS earbuds with improved ANC and Dolby Atmos support.",
+    "ru": "Компактные TWS-наушники с улучшенным ANC и поддержкой Dolby Atmos."
+  },
+  "features": {
+    "uk": ["Bluetooth 5.3", "До 7 годин без кейсу", "Dolby Atmos", "Швидка зарядка"],
+    "en": ["Bluetooth 5.3", "Up to 7h standalone", "Dolby Atmos", "Fast charging"],
+    "ru": ["Bluetooth 5.3", "До 7 ч без кейса", "Dolby Atmos", "Быстрая зарядка"]
+  },
+  "images": [
+    "../images/products/headphones/samsungGalaxyBuds3/1.jpeg",
+    "../images/products/headphones/samsungGalaxyBuds3/2.jpeg",
+    "../images/products/headphones/samsungGalaxyBuds3/2.jpeg"
+  ]
+}

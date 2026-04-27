@@ -1,0 +1,33 @@
+{
+  "id": "sony_wena3",
+  "name": {
+    "uk": "Sony Wena 3",
+    "en": "Sony Wena 3",
+    "ru": "Sony Wena 3"
+  },
+  "brand": "Sony",
+  "category": "smartwatches",
+  "price": 15999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.5,
+  "reviews": 53,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Гібридний розумний годинник із металевим ремінцем і сенсорним екраном.",
+    "en": "Hybrid smartwatch with metal strap and touch display.",
+    "ru": "Гибридные смарт-часы с металлическим ремешком и сенсорным экраном."
+  },
+  "features": {
+    "uk": ["Металевий корпус", "Сумісність з Android/iOS", "NFC", "Пульсометр", "До 7 днів роботи"],
+    "en": ["Metal body", "Android/iOS compatible", "NFC", "Heart rate", "7 days battery"],
+    "ru": ["Металлический корпус", "Совместимость Android/iOS", "NFC", "Пульс", "7 дней работы"]
+  },
+  "images": [
+    "../images/products/smartwatches/sony_wena3/1.jpeg",
+    "../images/products/smartwatches/sony_wena3/2.jpeg",
+    "../images/products/smartwatches/sony_wena3/3.jpeg"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "xiaomi14tpro",
+  "name": { "uk": "Xiaomi 14T Pro", "en": "Xiaomi 14T Pro", "ru": "Xiaomi 14T Pro" },
+  "brand": "Xiaomi",
+  "category": "phones",
+  "price": 26999,
+  "oldPrice": 26999,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 103,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Потужний смартфон із Dimensity 9200+ і камерою Leica 50 Мп.",
+    "en": "Powerful smartphone with Dimensity 9200+ and Leica 50 MP camera.",
+    "ru": "Мощный смартфон с Dimensity 9200+ и камерой Leica 50 Мп."
+  },
+  "features": {
+    "uk": ["6.67” CrystalRes AMOLED", "Dimensity 9200+", "Leica камера 50 Мп", "120 Вт зарядка", "IP68"],
+    "en": ["6.67” CrystalRes AMOLED", "Dimensity 9200+", "Leica 50 MP camera", "120W charging", "IP68 rating"],
+    "ru": ["6.67” CrystalRes AMOLED", "Dimensity 9200+", "Камера Leica 50 Мп", "120 Вт зарядка", "IP68"]
+  },
+  "images": [
+    "../images/products/phones/xiaomi14tpro/1.jpeg",
+    "../images/products/phones/xiaomi14tpro/2.jpeg",
+    "../images/products/phones/xiaomi14tpro/3.jpeg"
+  ]
+}

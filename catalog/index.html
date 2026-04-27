@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог електроніки TechStore — смартфони Apple та Samsung, ноутбуки, навушники, розумні годинники та аксесуари. Фільтри за брендом, ціною та рейтингом." data-i18n-content="meta_description_catalog">
+  <meta name="keywords" content="каталог електроніки, смартфони, ноутбуки, навушники, розумні годинники, аксесуари, Apple, Samsung, Xiaomi, Sony" data-i18n-content="meta_keywords_catalog">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6366F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="TechStore">
+  <meta property="og:title" content="Каталог електроніки — TechStore">
+  <meta property="og:description" content="Смартфони, ноутбуки, навушники, розумні годинники та аксесуари з фільтрами за брендом, ціною та рейтингом.">
+  <meta property="og:url" content="https://mrdepdodep.github.io/techstore/catalog/">
+  <meta property="og:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Каталог електроніки TechStore">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Каталог електроніки — TechStore">
+  <meta name="twitter:description" content="Смартфони, ноутбуки, навушники та аксесуари з фільтрами за брендом, ціною та рейтингом.">
+  <meta name="twitter:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta name="twitter:image:alt" content="Каталог електроніки TechStore">
+  <meta name="author" content="Mykola — frelancer-web-dev">
+  <title data-i18n="meta_title_catalog">Каталог електроніки — Смартфони, Ноутбуки, Навушники | TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/catalog/">
+  <link rel="alternate" hreflang="uk" href="https://mrdepdodep.github.io/techstore/catalog/">
+  <link rel="alternate" hreflang="en" href="https://mrdepdodep.github.io/techstore/catalog/">
+  <link rel="alternate" hreflang="ru" href="https://mrdepdodep.github.io/techstore/catalog/">
+  <link rel="alternate" hreflang="x-default" href="https://mrdepdodep.github.io/techstore/catalog/">
+  <link rel="manifest" href="../site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Головна", "item": "https://mrdepdodep.github.io/techstore/" },
+      { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://mrdepdodep.github.io/techstore/catalog/" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/catalog.css">
+  <link rel="stylesheet" href="../assets/css/product.css">  <!-- Для карток товарів -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main-content">
+          <!-- Logo -->
+          <a href="../" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechStore</span>
+          </a>
+
+          <!-- Search -->
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Пошук товарів..."
+              data-i18n-placeholder="search_placeholder"
+              id="searchInput"
+            >
+            <button class="search-btn" id="searchBtn" aria-label="Search" data-i18n-aria-label="aria_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="language">укр</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <button data-lang="uk">Українська</button>
+                <button data-lang="en">English</button>
+                <button data-lang="ru">Русский</button>
+              </div>
+            </div>
+
+            <!-- Theme Switcher -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria-label="aria_theme_toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Header Nav -->
+          <nav class="header-nav">
+                        <button class="nav-icon" id="compareHeaderBtn" aria-label="Порівняння" data-i18n-aria-label="aria_compare">
+              <i class="fas fa-scale-balanced"></i>
+              <span class="badge" id="compareCount">0</span>
+            </button>
+<a href="../favorites/" class="nav-icon">
+              <i class="fas fa-heart"></i>
+              <span class="badge" id="favoritesCount">0</span>
+            </a>
+            <a href="../cart/" class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cartCount">0</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" data-i18n-aria-label="aria_open_menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../" data-i18n="nav_home">Головна</a></li>
+          <li><a href="../catalog/" class="active" data-i18n="nav_catalog">Каталог</a></li>
+          <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+          <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../" data-i18n="nav_home">Головна</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li data-i18n="nav_catalog">Каталог</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Catalog Section -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="catalog-layout">
+        <!-- Sidebar Filters -->
+        <aside class="catalog-sidebar" id="catalogSidebar">
+          <div class="sidebar-header">
+            <h3 data-i18n="filters_title">Фільтри</h3>
+            <button class="btn-reset-filters" id="resetFilters" data-i18n="filters_reset">
+              Скинути всі
+            </button>
+          </div>
+
+          <!-- Categories Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title" data-i18n="filter_category">Категорія</h4>
+            <div class="filter-options" id="categoryFilter">
+              <label class="filter-option">
+                <input type="radio" name="category" value="all" checked>
+                <span data-i18n="filter_all">Всі товари</span>
+              </label>
+              <label class="filter-option">
+                <input type="radio" name="category" value="phones">
+                <span data-i18n="category_smartphones">Смартфони</span>
+              </label>
+              <label class="filter-option">
+                <input type="radio" name="category" value="laptops">
+                <span data-i18n="category_laptops">Ноутбуки</span>
+              </label>
+              <label class="filter-option">
+                <input type="radio" name="category" value="headphones">
+                <span data-i18n="category_headphones">Навушники</span>
+              </label>
+              <label class="filter-option">
+                <input type="radio" name="category" value="smartwatches">
+                <span data-i18n="category_watches">Розумні годинники</span>
+              </label>
+              <label class="filter-option">
+                <input type="radio" name="category" value="accessories">
+                <span data-i18n="category_accessories">Аксесуари</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title" data-i18n="filter_price">Ціна</h4>
+            <div class="price-range">
+              <input type="number" id="priceMin" placeholder="Від" data-i18n-placeholder="filter_price_from" min="0">
+              <span>—</span>
+              <input type="number" id="priceMax" placeholder="До" data-i18n-placeholder="filter_price_to" min="0">
+            </div>
+            <button class="btn-apply-price" id="applyPrice" data-i18n="filter_apply">
+              Застосувати
+            </button>
+          </div>
+
+          <!-- Brand Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title" data-i18n="filter_brand">Бренд</h4>
+            <div class="filter-options" id="brandFilter">
+              <label class="filter-option">
+                <input type="checkbox" value="apple">
+                <span>Apple</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="samsung">
+                <span>Samsung</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="xiaomi">
+                <span>Xiaomi</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="sony">
+                <span>Sony</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="huawei">
+                <span>Huawei</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Rating Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title" data-i18n="filter_rating">Рейтинг</h4>
+            <div class="filter-options" id="ratingFilter">
+              <label class="filter-option">
+                <input type="checkbox" value="5">
+                <span>★★★★★ (5.0)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="4">
+                <span>★★★★☆ (4.0+)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" value="3">
+                <span>★★★☆☆ (3.0+)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Availability Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title" data-i18n="filter_availability">Наявність</h4>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" id="inStockOnly">
+                <span data-i18n="filter_in_stock">Тільки в наявності</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="catalog-main">
+          <!-- Toolbar -->
+          <div class="catalog-toolbar">
+            <div class="toolbar-left">
+              <button class="btn-toggle-filters" id="toggleFilters">
+                <i class="fas fa-filter"></i>
+                <span data-i18n="filters_title">Фільтри</span>
+              </button>
+              <div class="products-count">
+                <span data-i18n="products_found">Знайдено товарів:</span>
+                <strong id="productsCount">0</strong>
+              </div>
+            </div>
+
+            <div class="toolbar-right">
+              <label class="sort-label">
+                <span data-i18n="sort_by">Сортувати:</span>
+                <select id="sortSelect" class="sort-select">
+                  <option value="default" data-i18n="sort_default">За замовчуванням</option>
+                  <option value="price-asc" data-i18n="sort_price_asc">Спочатку дешевші</option>
+                  <option value="price-desc" data-i18n="sort_price_desc">Спочатку дорожчі</option>
+                  <option value="name-asc" data-i18n="sort_name_asc">За назвою (А-Я)</option>
+                  <option value="name-desc" data-i18n="sort_name_desc">За назвою (Я-А)</option>
+                  <option value="rating" data-i18n="sort_rating">За рейтингом</option>
+                </select>
+              </label>
+
+              <div class="view-toggle">
+                <button class="view-btn active" data-view="grid" aria-label="Grid view" data-i18n-aria-label="aria_grid_view">
+                  <i class="fas fa-th"></i>
+                </button>
+                <button class="view-btn" data-view="list" aria-label="List view" data-i18n-aria-label="aria_list_view">
+                  <i class="fas fa-list"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded dynamically -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination" id="pagination">
+            <!-- Pagination will be generated dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechStore</span>
+            </div>
+            <p class="footer-description" data-i18n="footer_description">
+              Ваш надійний партнер у світі технологій. Якість, швидкість, доступність.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_catalog_title">Каталог</h4>
+            <ul class="footer-links">
+              <li><a href="../catalog/?category=smartphones" data-i18n="category_smartphones">Смартфони</a></li>
+              <li><a href="../catalog/?category=laptops" data-i18n="category_laptops">Ноутбуки</a></li>
+              <li><a href="../catalog/?category=headphones" data-i18n="category_headphones">Навушники</a></li>
+              <li><a href="../catalog/?category=watches" data-i18n="category_watches">Розумні годинники</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_info_title">Інформація</h4>
+            <ul class="footer-links">
+              <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+              <li><a href="#" data-i18n="footer_delivery">Доставка і оплата</a></li>
+              <li><a href="#" data-i18n="footer_warranty">Гарантія</a></li>
+              <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_contacts_title">Контакти</h4>
+            <ul class="footer-contacts">
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>0 800 123 456</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@techstore.ua</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="footer_address">м. Київ, вул. Хрещатик, 1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 TechStore. <span data-i18n="footer_rights">Всі права захищені</span>.</p>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer_privacy">Політика конфіденційності</a>
+            <a href="#" data-i18n="footer_terms">Умови використання</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Signature -->
+  <div class="signature" aria-label="Portfolio signature" data-i18n-aria-label="aria_portfolio_signature">Mr Dep's Portfolio</div>
+
+  <script src="../assets/js/utils.js" defer></script>
+  <script src="../assets/js/product-data.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/catalog.js" defer></script>
+</body>
+</html>

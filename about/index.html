@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Про TechStore — портфоліо-проєкт інтернет-магазину електроніки. Дізнайтесь про місію, цінності та технічний стек проєкту: Vanilla JS, адаптивний дизайн, i18n, темна тема." data-i18n-content="meta_description_about">
+  <meta name="keywords" content="про TechStore, портфоліо, frontend розробник, Vanilla JS, e-commerce проєкт" data-i18n-content="meta_keywords_about">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6366F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="TechStore">
+  <meta property="og:title" content="Про проєкт — TechStore">
+  <meta property="og:description" content="Портфоліо-проєкт сучасного e-commerce інтерфейсу на Vanilla JS з адаптивним дизайном, темною темою та підтримкою трьох мов.">
+  <meta property="og:url" content="https://mrdepdodep.github.io/techstore/about/">
+  <meta property="og:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Про проєкт TechStore">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Про проєкт — TechStore">
+  <meta name="twitter:description" content="Портфоліо-проєкт e-commerce на Vanilla JS з темною темою та i18n.">
+  <meta name="twitter:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta name="twitter:image:alt" content="Про проєкт TechStore">
+  <meta name="author" content="Mykola — frelancer-web-dev">
+  <title data-i18n="meta_title_about">Про проєкт — Технології та місія | TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/about/">
+  <link rel="alternate" hreflang="uk" href="https://mrdepdodep.github.io/techstore/about/">
+  <link rel="alternate" hreflang="en" href="https://mrdepdodep.github.io/techstore/about/">
+  <link rel="alternate" hreflang="ru" href="https://mrdepdodep.github.io/techstore/about/">
+  <link rel="alternate" hreflang="x-default" href="https://mrdepdodep.github.io/techstore/about/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Головна", "item": "https://mrdepdodep.github.io/techstore/" },
+      { "@type": "ListItem", "position": 2, "name": "Про нас", "item": "https://mrdepdodep.github.io/techstore/about/" }
+    ]
+  }
+  </script>
+
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Тільки необхідні стилі -->
+  <link rel="stylesheet" href="../assets/css/styles.css">         <!-- Базові стилі (обов'язково) -->
+  <link rel="stylesheet" href="../assets/css/main.css">           <!-- Header/Footer (обов'язково) -->
+  <link rel="stylesheet" href="../assets/css/components.css">     <!-- Компоненти (модалки, тости) -->
+  <link rel="stylesheet" href="../assets/css/about-contacts.css"> <!-- Сторінка Про нас -->
+  <link rel="stylesheet" href="../assets/css/theme.css">          <!-- Темна тема (останнім) -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main-content">
+          <!-- Logo -->
+          <a href="../" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechStore</span>
+          </a>
+
+          <!-- Search -->
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Пошук товарів..."
+              data-i18n-placeholder="search_placeholder"
+              id="searchInput"
+            >
+            <button class="search-btn" id="searchBtn" aria-label="Search" data-i18n-aria-label="aria_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="language">укр</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <button data-lang="uk">Українська</button>
+                <button data-lang="en">English</button>
+                <button data-lang="ru">Русский</button>
+              </div>
+            </div>
+
+            <!-- Theme Switcher -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria-label="aria_theme_toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Header Nav -->
+          <nav class="header-nav">
+                        <button class="nav-icon" id="compareHeaderBtn" aria-label="Порівняння" data-i18n-aria-label="aria_compare">
+              <i class="fas fa-scale-balanced"></i>
+              <span class="badge" id="compareCount">0</span>
+            </button>
+<a href="../favorites/" class="nav-icon">
+              <i class="fas fa-heart"></i>
+              <span class="badge" id="favoritesCount">0</span>
+            </a>
+            <a href="../cart/" class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cartCount">0</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" data-i18n-aria-label="aria_open_menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../" data-i18n="nav_home">Головна</a></li>
+          <li><a href="../catalog/" data-i18n="nav_catalog">Каталог</a></li>
+          <li><a href="../about/" class="active" data-i18n="nav_about">Про нас</a></li>
+          <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../" data-i18n="nav_home">Головна</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li data-i18n="nav_about">Про нас</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-hero-content">
+        <h1 class="page-title" data-i18n="about_title">Про TechStore</h1>
+        <p class="page-subtitle" data-i18n="about_subtitle">
+          Ваш надійний партнер у світі технологій з 2015 року
+        </p>
+      </div>
+
+      <!-- Story -->
+      <div class="about-content">
+        <div class="about-text">
+          <h2 data-i18n="about_story_title">Наша історія</h2>
+          <p data-i18n="about_story_p1">
+            TechStore почав свою роботу у 2015 році як невеликий магазин електроніки в центрі Києва.
+            З самого початку ми прагнули надавати нашим клієнтам не просто товари, а комплексні рішення
+            та якісний сервіс.
+          </p>
+          <p data-i18n="about_story_p2">
+            Сьогодні TechStore - це провідний онлайн-магазин електроніки в Україні з великим асортиментом
+            смартфонів, ноутбуків, гаджетів та аксесуарів від світових брендів. Ми обслуговуємо понад
+            100,000 клієнтів щороку та продовжуємо рости.
+          </p>
+        </div>
+        <div class="about-image">
+          <i class="fas fa-store"></i>
+        </div>
+      </div>
+
+      <!-- Mission -->
+      <div class="about-content reverse">
+        <div class="about-text">
+          <h2 data-i18n="about_mission_title">Наша місія</h2>
+          <p data-i18n="about_mission_p1">
+            Зробити найсучасніші технології доступними для кожного українця. Ми віримо, що
+            якісна електроніка не має бути розкішшю, а повинна бути доступною за чесною ціною.
+          </p>
+          <p data-i18n="about_mission_p2">
+            Наша мета - не просто продавати гаджети, а допомагати людям знаходити ті технологічні
+            рішення, які справді покращать їхнє життя, роботу та дозвілля.
+          </p>
+        </div>
+        <div class="about-image">
+          <i class="fas fa-bullseye"></i>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-section">
+        <h2 class="section-title" data-i18n="about_stats_title">TechStore в цифрах</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label" data-i18n="about_stat_years">Років на ринку</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number">100K+</div>
+            <div class="stat-label" data-i18n="about_stat_clients">Задоволених клієнтів</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-box-open"></i></div>
+            <div class="stat-number stat-number-products">500+</div>
+            <div class="stat-label" data-i18n="about_stat_products">Товарів в асортименті</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-headset"></i></div>
+            <div class="stat-number">24/7</div>
+            <div class="stat-label" data-i18n="about_stat_support">Підтримка клієнтів</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="values-section">
+        <h2 class="section-title" data-i18n="about_values_title">Наші цінності</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3 data-i18n="about_value_quality">Якість</h3>
+            <p data-i18n="about_value_quality_text">
+              Ми працюємо тільки з офіційними постачальниками та гарантуємо автентичність
+              кожного товару.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 data-i18n="about_value_trust">Довіра</h3>
+            <p data-i18n="about_value_trust_text">
+              Чесність та прозорість у всьому - від цін до умов гарантії. Без прихованих платежів.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 data-i18n="about_value_innovation">Інновації</h3>
+            <p data-i18n="about_value_innovation_text">
+              Завжди в курсі останніх технологічних трендів та новинок світу електроніки.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="team-section">
+        <h2 class="section-title" data-i18n="about_team_title">Наша команда</h2>
+        <p class="section-description" data-i18n="about_team_description">
+          Професіонали, які люблять свою справу та завжди готові допомогти
+        </p>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Олександр Петренко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Олександр Петренко</h3>
+            <p class="team-role" data-i18n="about_team_ceo">Генеральний директор</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Марія Коваленко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Марія Коваленко</h3>
+            <p class="team-role" data-i18n="about_team_manager">Менеджер з продажу</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Дмитро Сидоренко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Дмитро Сидоренко</h3>
+            <p class="team-role" data-i18n="about_team_support">Служба підтримки</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ольга Іваненко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Ольга Іваненко</h3>
+            <p class="team-role" data-i18n="about_team_logistic">Менеджер логістики</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Ігор Мельник" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Ігор Мельник</h3>
+            <p class="team-role">Керівник відділу закупівель</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Наталія Шевченко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Наталія Шевченко</h3>
+            <p class="team-role">HR менеджер</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Артем Бондар" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Артем Бондар</h3>
+            <p class="team-role">Керівник сервісного центру</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ірина Лисенко" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Ірина Лисенко</h3>
+            <p class="team-role">Фінансовий аналітик</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Владислав Романюк" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <h3>Владислав Романюк</h3>
+            <p class="team-role">Маркетинг спеціаліст</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechStore</span>
+            </div>
+            <p class="footer-description" data-i18n="footer_description">
+              Ваш надійний партнер у світі технологій. Якість, швидкість, доступність.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_catalog_title">Каталог</h4>
+            <ul class="footer-links">
+              <li><a href="../catalog/?category=smartphones" data-i18n="category_smartphones">Смартфони</a></li>
+              <li><a href="../catalog/?category=laptops" data-i18n="category_laptops">Ноутбуки</a></li>
+              <li><a href="../catalog/?category=headphones" data-i18n="category_headphones">Навушники</a></li>
+              <li><a href="../catalog/?category=watches" data-i18n="category_watches">Розумні годинники</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_info_title">Інформація</h4>
+            <ul class="footer-links">
+              <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+              <li><a href="#" data-i18n="footer_delivery">Доставка і оплата</a></li>
+              <li><a href="#" data-i18n="footer_warranty">Гарантія</a></li>
+              <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_contacts_title">Контакти</h4>
+            <ul class="footer-contacts">
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>0 800 123 456</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@techstore.ua</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="footer_address">м. Київ, вул. Хрещатик, 1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 TechStore. <span data-i18n="footer_rights">Всі права захищені</span>.</p>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer_privacy">Політика конфіденційності</a>
+            <a href="#" data-i18n="footer_terms">Умови використання</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Signature -->
+  <div class="signature" aria-label="Portfolio signature" data-i18n-aria-label="aria_portfolio_signature">Mr Dep's Portfolio</div>
+
+  <script src="../assets/js/utils.js" defer></script>
+  <script src="../assets/js/product-data.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

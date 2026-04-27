@@ -1,0 +1,34 @@
+{
+  "id": "lightningCable",
+  "name": {
+    "uk": "Lightning Кабель 1м",
+    "en": "Lightning Cable 1m",
+    "ru": "Lightning Кабель 1м"
+  },
+  "brand": "Anker",
+  "category": "accessories",
+  "price": 499,
+  "oldPrice": 599,
+  "discount": 17,
+  "rating": 4.9,
+  "reviews": 312,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Надійний кабель Lightning для швидкої зарядки iPhone та iPad.",
+    "en": "Durable Lightning cable for fast charging iPhone and iPad.",
+    "ru": "Надежный кабель Lightning для быстрой зарядки iPhone и iPad."
+  },
+  "features": {
+    "uk": ["Довжина 1 метр", "Швидка зарядка", "Підтримка iPhone / iPad"],
+    "en": ["Length 1 meter", "Fast charging", "Supports iPhone / iPad"],
+    "ru": ["Длина 1 метр", "Быстрая зарядка", "Поддержка iPhone / iPad"]
+  },
+  "images": [
+    "../images/products/accessories/lightningCable/1.jpeg",
+    "../images/products/accessories/lightningCable/2.jpeg",
+    "../images/products/accessories/lightningCable/3.jpeg"
+
+  ]
+}

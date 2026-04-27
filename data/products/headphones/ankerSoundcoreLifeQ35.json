@@ -1,0 +1,33 @@
+{
+  "id": "ankerSoundcoreLifeQ35",
+  "name": {
+    "uk": "Anker Soundcore Life Q35",
+    "en": "Anker Soundcore Life Q35",
+    "ru": "Anker Soundcore Life Q35"
+  },
+  "brand": "Anker",
+  "category": "headphones",
+  "price": 4999,
+  "oldPrice": 5999,
+  "discount": 17,
+  "rating": 4.6,
+  "reviews": 201,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Навушники з Hi-Res Audio, гібридним ANC і тривалою автономністю.",
+    "en": "Headphones with Hi-Res Audio, hybrid ANC, and long battery life.",
+    "ru": "Наушники с Hi-Res Audio, гибридным ANC и долгой автономностью."
+  },
+  "features": {
+    "uk": ["Hi-Res Audio", "Гібридне ANC", "До 40 годин роботи", "Bluetooth 5.0"],
+    "en": ["Hi-Res Audio", "Hybrid ANC", "Up to 40h battery", "Bluetooth 5.0"],
+    "ru": ["Hi-Res Audio", "Гибридное ANC", "До 40 ч работы", "Bluetooth 5.0"]
+  },
+  "images": [
+    "../images/products/headphones/ankerSoundcoreLifeQ35/1.jpeg",
+    "../images/products/headphones/ankerSoundcoreLifeQ35/2.jpeg",
+    "../images/products/headphones/ankerSoundcoreLifeQ35/3.jpeg"
+  ]
+}

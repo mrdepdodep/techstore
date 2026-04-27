@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Кошик покупок TechStore — перегляньте обрані товари, змініть кількість або перейдіть до оформлення замовлення." data-i18n-content="meta_description_cart">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#6366F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="TechStore">
+  <meta property="og:title" content="Кошик покупок — TechStore">
+  <meta property="og:description" content="Перевірте товари у кошику, змініть кількість та перейдіть до оформлення замовлення.">
+  <meta property="og:url" content="https://mrdepdodep.github.io/techstore/cart/">
+  <meta property="og:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Кошик покупок — TechStore">
+  <meta name="twitter:description" content="Перевірте товари у кошику та перейдіть до оформлення замовлення.">
+  <title data-i18n="meta_title_cart">Кошик покупок — TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/cart/">
+  <link rel="alternate" hreflang="uk" href="https://mrdepdodep.github.io/techstore/cart/">
+  <link rel="alternate" hreflang="en" href="https://mrdepdodep.github.io/techstore/cart/">
+  <link rel="alternate" hreflang="ru" href="https://mrdepdodep.github.io/techstore/cart/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/product.css">  <!-- Для рекомендованих товарів -->
+  <link rel="stylesheet" href="../assets/css/cart.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+   <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main-content">
+          <!-- Logo -->
+          <a href="../" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechStore</span>
+          </a>
+
+          <!-- Search -->
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Пошук товарів..."
+              data-i18n-placeholder="search_placeholder"
+              id="searchInput"
+            >
+            <button class="search-btn" id="searchBtn" aria-label="Search" data-i18n-aria-label="aria_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="language">укр</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <button data-lang="uk">Українська</button>
+                <button data-lang="en">English</button>
+                <button data-lang="ru">Русский</button>
+              </div>
+            </div>
+
+            <!-- Theme Switcher -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria-label="aria_theme_toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Header Nav -->
+          <nav class="header-nav">
+                        <button class="nav-icon" id="compareHeaderBtn" aria-label="Порівняння" data-i18n-aria-label="aria_compare">
+              <i class="fas fa-scale-balanced"></i>
+              <span class="badge" id="compareCount">0</span>
+            </button>
+<a href="../favorites/" class="nav-icon">
+              <i class="fas fa-heart"></i>
+              <span class="badge" id="favoritesCount">0</span>
+            </a>
+            <a href="../cart/" class="nav-icon active">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cartCount">0</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" data-i18n-aria-label="aria_open_menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../" data-i18n="nav_home">Головна</a></li>
+          <li><a href="../catalog/" data-i18n="nav_catalog">Каталог</a></li>
+          <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+          <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../" data-i18n="nav_home">Головна</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li data-i18n="cart_title">Кошик</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <div class="container">
+      <h1 class="page-title">
+        <i class="fas fa-shopping-cart"></i>
+        <span data-i18n="cart_title">Кошик</span>
+      </h1>
+
+      <!-- Empty Cart Message -->
+      <div class="empty-cart" id="emptyCart" style="display: none;">
+        <div class="empty-cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <h2 class="empty-cart-title" data-i18n="cart_empty_title">Ваш кошик порожній</h2>
+        <p class="empty-cart-text" data-i18n="cart_empty_text">
+          Схоже, ви ще не додали жодного товару до кошика. Перегляньте наш каталог та оберіть те, що вам подобається!
+        </p>
+        <div class="empty-cart-actions">
+          <a href="../catalog/" class="btn btn-primary">
+            <i class="fas fa-th"></i>
+            <span data-i18n="go_to_catalog">Перейти до каталогу</span>
+          </a>
+          <a href="../favorites/" class="btn btn-outline">
+            <i class="fas fa-heart"></i>
+            <span data-i18n="view_favorites">Переглянути обране</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Cart Content -->
+      <div class="cart-content" id="cartContent">
+
+        <!-- Steps Progress -->
+        <div class="cart-steps">
+          <div class="step active">
+            <div class="step-number">1</div>
+            <div class="step-label" data-i18n="step_cart">Кошик</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-label" data-i18n="step_checkout">Оформлення</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-label" data-i18n="step_success">Завершено</div>
+          </div>
+        </div>
+
+        <div class="cart-layout">
+          <!-- Cart Items -->
+          <div class="cart-items">
+            <div class="cart-header">
+              <h2 class="cart-items-title">
+                <span data-i18n="cart_items">Товари в кошику</span>
+                (<span id="cartItemsCount">0</span>)
+              </h2>
+              <button class="btn-clear-cart" id="clearCartBtn">
+                <i class="fas fa-trash"></i>
+                <span data-i18n="clear_cart">Очистити кошик</span>
+              </button>
+            </div>
+
+            <div class="cart-items-list" id="cartItemsList">
+              <!-- Cart items will be loaded dynamically -->
+            </div>
+
+            <!-- Continue Shopping -->
+            <div class="cart-actions">
+              <a href="../catalog/" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="continue_shopping">Продовжити покупки</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cart Summary -->
+          <div class="cart-summary">
+            <h3 class="summary-title" data-i18n="order_summary">Разом до сплати</h3>
+
+            <div class="summary-details">
+              <div class="summary-row">
+                <span data-i18n="subtotal">Вартість товарів:</span>
+                <span id="subtotal">0 ₴</span>
+              </div>
+
+              <div class="summary-row">
+                <span data-i18n="discount">Знижка:</span>
+                <span class="discount" id="discountAmount">0 ₴</span>
+              </div>
+
+              <div class="summary-row">
+                <span data-i18n="delivery">Доставка:</span>
+                <span id="deliveryPrice">0 ₴</span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row summary-total">
+                <span data-i18n="total">До сплати:</span>
+                <span id="totalPrice">0 ₴</span>
+              </div>
+            </div>
+
+            <!-- Promo Code -->
+            <div class="promo-code">
+              <h4 class="promo-title" data-i18n="promo_code_title">Промокод</h4>
+              <div class="promo-input-group">
+                <input
+                  type="text"
+                  class="promo-input"
+                  id="promoInput"
+                  placeholder="Введіть промокод"
+                  data-i18n-placeholder="promo_placeholder"
+                >
+                <button class="btn btn-secondary" id="applyPromoBtn" data-i18n="apply">
+                  Застосувати
+                </button>
+              </div>
+              <div class="promo-message" id="promoMessage"></div>
+            </div>
+
+            <!-- Free Delivery Info -->
+            <div class="delivery-info" id="deliveryInfo">
+              <div class="delivery-progress">
+                <div class="delivery-progress-bar">
+                  <div class="delivery-progress-fill" id="deliveryProgressFill" style="width: 0%"></div>
+                </div>
+                <p class="delivery-text" id="deliveryText">
+                  <i class="fas fa-truck"></i>
+                  <span data-i18n="add_more_free_delivery">Додайте товарів ще на <strong id="deliveryRemaining">1000 ₴</strong> для безкоштовної доставки</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Checkout Button -->
+            <button class="btn btn-primary btn-checkout" id="checkoutBtn">
+              <span data-i18n="proceed_to_checkout">Перейти до оформлення</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+              <p class="payment-label" data-i18n="we_accept">Ми приймаємо:</p>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-google-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+              </div>
+            </div>
+
+            <!-- Guarantees -->
+            <div class="cart-guarantees">
+              <div class="guarantee-item">
+                <i class="fas fa-shield-alt"></i>
+                <span data-i18n="secure_payment">Безпечна оплата</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="fas fa-undo"></i>
+                <span data-i18n="easy_return">Легке повернення</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="fas fa-headset"></i>
+                <span data-i18n="support_247">Підтримка 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Products -->
+      <div class="recommended-section" id="recommendedSection" style="display: none;">
+        <h2 class="section-title" data-i18n="you_may_like">Вам може сподобатись</h2>
+        <div class="products-grid" id="recommendedProducts">
+          <!-- Recommended products will be loaded dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechStore</span>
+            </div>
+            <p class="footer-description" data-i18n="footer_description">
+              Ваш надійний партнер у світі технологій. Якість, швидкість, доступність.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_catalog_title">Каталог</h4>
+            <ul class="footer-links">
+              <li><a href="../catalog/?category=smartphones" data-i18n="category_smartphones">Смартфони</a></li>
+              <li><a href="../catalog/?category=laptops" data-i18n="category_laptops">Ноутбуки</a></li>
+              <li><a href="../catalog/?category=headphones" data-i18n="category_headphones">Навушники</a></li>
+              <li><a href="../catalog/?category=watches" data-i18n="category_watches">Розумні годинники</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_info_title">Інформація</h4>
+            <ul class="footer-links">
+              <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+              <li><a href="#" data-i18n="footer_delivery">Доставка і оплата</a></li>
+              <li><a href="#" data-i18n="footer_warranty">Гарантія</a></li>
+              <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_contacts_title">Контакти</h4>
+            <ul class="footer-contacts">
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>0 800 123 456</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@techstore.ua</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="footer_address">м. Київ, вул. Хрещатик, 1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 TechStore. <span data-i18n="footer_rights">Всі права захищені</span>.</p>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer_privacy">Політика конфіденційності</a>
+            <a href="#" data-i18n="footer_terms">Умови використання</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal -->
+  <div class="modal" id="confirmModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <div class="modal-icon">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <h3 class="modal-title" data-i18n="confirm_action">Підтвердіть дію</h3>
+      <p class="modal-text" id="confirmText"></p>
+      <div class="modal-actions">
+        <button class="btn btn-outline" id="cancelBtn" data-i18n="cancel">Скасувати</button>
+        <button class="btn btn-primary" id="confirmBtn" data-i18n="confirm">Підтвердити</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <div class="toast-content">
+      <div class="toast-title" id="toastTitle"></div>
+      <div class="toast-message" id="toastMessage"></div>
+    </div>
+  </div>
+
+    <!-- Signature -->
+  <div class="signature" aria-label="Portfolio signature" data-i18n-aria-label="aria_portfolio_signature">Mr Dep's Portfolio</div>
+
+  <script src="../assets/js/utils.js" defer></script>
+  <script src="../assets/js/product-data.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/cart.js" defer></script>
+</body>
+</html>

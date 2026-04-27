@@ -1,0 +1,33 @@
+{
+  "id": "mousePad",
+  "name": {
+    "uk": "Килимок для миші XXL",
+    "en": "Mouse Pad XXL",
+    "ru": "Коврик для мыши XXL"
+  },
+  "brand": "Razer",
+  "category": "accessories",
+  "price": 1299,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 67,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Великий ігровий килимок з гумовою основою та RGB-підсвічуванням.",
+    "en": "Large gaming mouse pad with rubber base and RGB lighting.",
+    "ru": "Большой игровой коврик с резиновым основанием и RGB-подсветкой."
+  },
+  "features": {
+    "uk": ["Розмір 900x400 мм", "RGB-підсвічування", "Не ковзає", "Підходить для геймерів"],
+    "en": ["Size 900x400 mm", "RGB lighting", "Non-slip", "Ideal for gamers"],
+    "ru": ["Размер 900x400 мм", "RGB-подсветка", "Не скользит", "Подходит для геймеров"]
+  },
+  "images": [
+    "../images/products/accessories/mousePad/1.jpeg",
+    "../images/products/accessories/mousePad/1.jpeg",
+    "../images/products/accessories/mousePad/1.jpeg"
+  ]
+}

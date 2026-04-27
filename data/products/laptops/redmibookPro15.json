@@ -1,0 +1,33 @@
+{
+  "id": "redmibookPro15",
+  "name": {
+    "uk": "Xiaomi RedmiBook Pro 15",
+    "en": "Xiaomi RedmiBook Pro 15",
+    "ru": "Xiaomi RedmiBook Pro 15"
+  },
+  "brand": "Xiaomi",
+  "category": "laptops",
+  "price": 32999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 203,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Потужний і стильний ноутбук з процесором AMD Ryzen 7 7840HS та 2.5K дисплеєм.",
+    "en": "Powerful and stylish laptop with AMD Ryzen 7 7840HS and 2.5K display.",
+    "ru": "Мощный и стильный ноутбук с AMD Ryzen 7 7840HS и 2.5K дисплеем."
+  },
+  "features": {
+    "uk": ["15.6” 2.5K IPS", "Ryzen 7 7840HS", "16 ГБ RAM", "512 ГБ SSD", "Металевий корпус"],
+    "en": ["15.6” 2.5K IPS", "Ryzen 7 7840HS", "16 GB RAM", "512 GB SSD", "Metal body"],
+    "ru": ["15.6” 2.5K IPS", "Ryzen 7 7840HS", "16 ГБ ОЗУ", "512 ГБ SSD", "Металлический корпус"]
+  },
+  "images": [
+    "../images/products/laptops/redmibookPro15/1.jpg",
+    "../images/products/laptops/redmibookPro15/2.webp",
+    "../images/products/laptops/redmibookPro15/3.webp"
+  ]
+}

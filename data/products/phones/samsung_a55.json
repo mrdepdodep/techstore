@@ -1,0 +1,29 @@
+{
+  "id": "samsung_a55",
+  "name": { "uk": "Samsung Galaxy A55", "en": "Samsung Galaxy A55", "ru": "Samsung Galaxy A55" },
+  "brand": "Samsung",
+  "category": "phones",
+  "price": 16999,
+  "oldPrice": 18999,
+  "discount": 11,
+  "rating": 4.7,
+  "reviews": 174,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Середньобюджетний смартфон із процесором Exynos 1480 та металевою рамкою.",
+    "en": "Mid-range smartphone with Exynos 1480 processor and metal frame.",
+    "ru": "Среднебюджетный смартфон с процессором Exynos 1480 и металлической рамкой."
+  },
+  "features": {
+    "uk": ["6.6” Super AMOLED 120 Гц", "Exynos 1480", "Камера 50 Мп", "Батарея 5000 мА·г", "Підтримка 5G"],
+    "en": ["6.6” Super AMOLED 120Hz", "Exynos 1480", "50 MP camera", "5000 mAh battery", "5G support"],
+    "ru": ["6.6” Super AMOLED 120 Гц", "Exynos 1480", "Камера 50 Мп", "Батарея 5000 мА·ч", "Поддержка 5G"]
+  },
+  "images": [
+    "../images/products/phones/a55/1.jpeg",
+    "../images/products/phones/a55/2.jpeg",
+    "../images/products/phones/a55/3.jpeg"
+  ]
+}

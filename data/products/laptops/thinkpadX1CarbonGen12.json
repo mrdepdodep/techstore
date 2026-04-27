@@ -1,0 +1,33 @@
+{
+  "id": "thinkpadX1CarbonGen12",
+  "name": {
+    "uk": "Lenovo ThinkPad X1 Carbon Gen 12",
+    "en": "Lenovo ThinkPad X1 Carbon Gen 12",
+    "ru": "Lenovo ThinkPad X1 Carbon Gen 12"
+  },
+  "brand": "Lenovo",
+  "category": "laptops",
+  "price": 58999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 140,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Бізнес-ноутбук з Intel Core Ultra 7, нейронним процесором NPU та дисплеєм 2.8K.",
+    "en": "Business laptop with Intel Core Ultra 7, built-in NPU, and 2.8K display.",
+    "ru": "Бизнес-ноутбук с Intel Core Ultra 7, нейронным процессором NPU и 2.8K дисплеем."
+  },
+  "features": {
+    "uk": ["14” 2.8K OLED", "Intel Core Ultra 7", "16 ГБ RAM", "512 ГБ SSD", "Dolby Vision"],
+    "en": ["14” 2.8K OLED", "Intel Core Ultra 7", "16 GB RAM", "512 GB SSD", "Dolby Vision"],
+    "ru": ["14” 2.8K OLED", "Intel Core Ultra 7", "16 ГБ ОЗУ", "512 ГБ SSD", "Dolby Vision"]
+  },
+  "images": [
+    "../images/products/laptops/thinkpadX1CarbonGen12/1.jpeg",
+    "../images/products/laptops/thinkpadX1CarbonGen12/2.jpeg",
+    "../images/products/laptops/thinkpadX1CarbonGen12/3.jpeg"
+  ]
+}

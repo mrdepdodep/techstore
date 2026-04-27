@@ -1,0 +1,29 @@
+{
+  "id": "iphone15",
+  "name": { "uk": "iPhone 15", "en": "iPhone 15", "ru": "iPhone 15" },
+  "brand": "Apple",
+  "category": "phones",
+  "price": 39999,
+  "oldPrice": 43999,
+  "discount": 9,
+  "rating": 4.8,
+  "reviews": 86,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Сучасний смартфон із чипом A16 Bionic, камерою 48 Мп та портом USB-C.",
+    "en": "Modern smartphone with A16 Bionic chip, 48 MP camera, and USB-C port.",
+    "ru": "Современный смартфон с чипом A16 Bionic, камерой 48 Мп и портом USB-C."
+  },
+  "features": {
+    "uk": ["6.1” OLED дисплей", "Процесор A16 Bionic", "Камера 48 Мп", "USB-C зарядка", "Підтримка 5G"],
+    "en": ["6.1” OLED display", "A16 Bionic chip", "48 MP camera", "USB-C charging", "5G support"],
+    "ru": ["6.1” OLED дисплей", "Чип A16 Bionic", "Камера 48 Мп", "Зарядка USB-C", "Поддержка 5G"]
+  },
+  "images": [
+    "../images/products/phones/iphone15/1.png",
+    "../images/products/phones/iphone15/2.png",
+    "../images/products/phones/iphone15/3.png"
+  ]
+}

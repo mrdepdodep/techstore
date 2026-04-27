@@ -1,0 +1,29 @@
+{
+  "id": "sony_xperia10vi",
+  "name": { "uk": "Sony Xperia 10 VI", "en": "Sony Xperia 10 VI", "ru": "Sony Xperia 10 VI" },
+  "brand": "Sony",
+  "category": "phones",
+  "price": 15999,
+  "oldPrice": 15999,
+  "discount": null,
+  "rating": 4.5,
+  "reviews": 49,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Легкий смартфон з OLED-дисплеєм і водозахистом, ідеальний для щоденного використання.",
+    "en": "Lightweight smartphone with OLED display and water resistance, ideal for everyday use.",
+    "ru": "Лёгкий смартфон с OLED-дисплеем и водозащитой, идеален для повседневного использования."
+  },
+  "features": {
+    "uk": ["6.1” OLED дисплей", "Snapdragon 6 Gen 1", "Камера 48 Мп", "IP68", "5000 мА·г"],
+    "en": ["6.1” OLED display", "Snapdragon 6 Gen 1", "48 MP camera", "IP68", "5000 mAh battery"],
+    "ru": ["6.1” OLED дисплей", "Snapdragon 6 Gen 1", "Камера 48 Мп", "IP68", "5000 мА·ч"]
+  },
+  "images": [
+    "../images/products/phones/xperia10vi/1.jpeg",
+    "../images/products/phones/xperia10vi/2.jpeg",
+    "../images/products/phones/xperia10vi/3.jpeg"
+  ]
+}

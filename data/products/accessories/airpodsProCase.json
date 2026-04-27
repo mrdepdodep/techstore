@@ -1,0 +1,33 @@
+{
+  "id": "airpodsProCase",
+  "name": {
+    "uk": "Чохол для AirPods Pro",
+    "en": "AirPods Pro Case",
+    "ru": "Чехол для AirPods Pro"
+  },
+  "brand": "ESR",
+  "category": "accessories",
+  "price": 599,
+  "oldPrice": 799,
+  "discount": 25,
+  "rating": 4.5,
+  "reviews": 45,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Захисний силіконовий чохол для AirPods Pro з карабіном.",
+    "en": "Protective silicone case for AirPods Pro with carabiner.",
+    "ru": "Защитный силиконовый чехол для AirPods Pro с карабином."
+  },
+  "features": {
+    "uk": ["М’який силікон", "Сумісність з AirPods Pro 1/2", "Захист від пилу та подряпин"],
+    "en": ["Soft silicone", "Compatible with AirPods Pro 1/2", "Protection from dust and scratches"],
+    "ru": ["Мягкий силикон", "Совместим с AirPods Pro 1/2", "Защита от пыли и царапин"]
+  },
+  "images": [
+    "../images/products/accessories/airpodsProCase/1.jpeg",
+    "../images/products/accessories/airpodsProCase/2.jpeg",
+    "../images/products/accessories/airpodsProCase/3.jpeg"
+  ]
+}

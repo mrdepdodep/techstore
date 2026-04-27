@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оформлення замовлення TechStore — введіть контактні дані, оберіть спосіб доставки та оплати." data-i18n-content="meta_description_checkout">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#6366F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="TechStore">
+  <meta property="og:title" content="Оформлення замовлення — TechStore">
+  <meta property="og:description" content="Введіть контактні дані, оберіть доставку та оплату для завершення замовлення.">
+  <meta property="og:url" content="https://mrdepdodep.github.io/techstore/checkout/">
+  <meta property="og:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Оформлення замовлення — TechStore">
+  <meta name="twitter:description" content="Завершіть замовлення: доставка, оплата, контактні дані.">
+  <title data-i18n="meta_title_checkout">Оформлення замовлення — TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/checkout/">
+  <link rel="alternate" hreflang="uk" href="https://mrdepdodep.github.io/techstore/checkout/">
+  <link rel="alternate" hreflang="en" href="https://mrdepdodep.github.io/techstore/checkout/">
+  <link rel="alternate" hreflang="ru" href="https://mrdepdodep.github.io/techstore/checkout/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/cart.css">  <!-- Містить стилі checkout -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main-content">
+          <!-- Logo -->
+          <a href="../" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechStore</span>
+          </a>
+
+          <!-- Search -->
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Пошук товарів..."
+              data-i18n-placeholder="search_placeholder"
+              id="searchInput"
+            >
+            <button class="search-btn" id="searchBtn" aria-label="Search" data-i18n-aria-label="aria_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="language">укр</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <button data-lang="uk">Українська</button>
+                <button data-lang="en">English</button>
+                <button data-lang="ru">Русский</button>
+              </div>
+            </div>
+
+            <!-- Theme Switcher -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria-label="aria_theme_toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <!-- Header Nav -->
+          <nav class="header-nav">
+                        <button class="nav-icon" id="compareHeaderBtn" aria-label="Порівняння" data-i18n-aria-label="aria_compare">
+              <i class="fas fa-scale-balanced"></i>
+              <span class="badge" id="compareCount">0</span>
+            </button>
+<a href="../favorites/" class="nav-icon">
+              <i class="fas fa-heart"></i>
+              <span class="badge" id="favoritesCount">0</span>
+            </a>
+            <a href="../cart/" class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cartCount">0</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" data-i18n-aria-label="aria_open_menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../" data-i18n="nav_home">Головна</a></li>
+          <li><a href="../catalog/" data-i18n="nav_catalog">Каталог</a></li>
+          <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+          <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../" data-i18n="nav_home">Головна</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><a href="../cart/" data-i18n="cart_title">Кошик</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li data-i18n="checkout_title">Оформлення замовлення</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Checkout Section -->
+  <section class="checkout-section">
+    <div class="container">
+      <h1 class="page-title">
+        <i class="fas fa-clipboard-check"></i>
+        <span data-i18n="checkout_title">Оформлення замовлення</span>
+      </h1>
+
+      <!-- Steps Progress -->
+      <div class="cart-steps">
+        <div class="step completed">
+          <div class="step-number"><i class="fas fa-check"></i></div>
+          <div class="step-label" data-i18n="step_cart">Кошик</div>
+        </div>
+        <div class="step-line completed"></div>
+        <div class="step active">
+          <div class="step-number">2</div>
+          <div class="step-label" data-i18n="step_checkout">Оформлення</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-label" data-i18n="step_success">Завершено</div>
+        </div>
+      </div>
+
+      <div class="checkout-layout">
+        <!-- Checkout Form -->
+        <div class="checkout-form">
+          <form id="checkoutForm">
+            <!-- Contact Information -->
+            <div class="form-section">
+              <div class="section-header">
+                <h2 class="section-title">
+                  <i class="fas fa-user"></i>
+                  <span data-i18n="contact_info">Контактні дані</span>
+                </h2>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">
+                    <span data-i18n="first_name">Ім'я</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    data-i18n-placeholder="first_name_placeholder"
+                    placeholder="Введіть ваше ім'я"
+                  >
+                  <span class="form-error" id="firstNameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName" class="form-label">
+                    <span data-i18n="last_name">Прізвище</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="lastName"
+                    name="lastName"
+                    required
+                    data-i18n-placeholder="last_name_placeholder"
+                    placeholder="Введіть ваше прізвище"
+                  >
+                  <span class="form-error" id="lastNameError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" class="form-label">
+                    <span data-i18n="phone">Телефон</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    class="form-input"
+                    id="phone"
+                    name="phone"
+                    required
+                    data-i18n-placeholder="phone_placeholder"
+                    placeholder="+380 (XX) XXX-XX-XX"
+                  >
+                  <span class="form-error" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    <span data-i18n="email">Email</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-input"
+                    id="email"
+                    name="email"
+                    required
+                    data-i18n-placeholder="email_placeholder"
+                    placeholder="example@mail.com"
+                  >
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delivery Method -->
+            <div class="form-section">
+              <div class="section-header">
+                <h2 class="section-title">
+                  <i class="fas fa-truck"></i>
+                  <span data-i18n="delivery_method">Спосіб доставки</span>
+                </h2>
+              </div>
+
+              <div class="delivery-options">
+                <label class="delivery-option">
+                  <input type="radio" name="delivery" value="courier" checked>
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title" data-i18n="delivery_courier">Кур'єрська доставка</div>
+                      <div class="option-desc" data-i18n="delivery_courier_desc">1-2 дні, по Києву</div>
+                      <div class="option-price">100 ₴</div>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="delivery-option">
+                  <input type="radio" name="delivery" value="novaposhta">
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-box"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title">Нова Пошта</div>
+                      <div class="option-desc" data-i18n="delivery_np_desc">У відділення, 2-3 дні</div>
+                      <div class="option-price">80 ₴</div>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="delivery-option">
+                  <input type="radio" name="delivery" value="pickup">
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-store"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title" data-i18n="delivery_pickup">Самовивіз</div>
+                      <div class="option-desc" data-i18n="delivery_pickup_desc">З нашого магазину</div>
+                      <div class="option-price free" data-i18n="free">Безкоштовно</div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Address Fields -->
+              <div id="addressFields">
+                <div class="form-group">
+                  <label for="city" class="form-label">
+                    <span data-i18n="city">Місто</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="city"
+                    name="city"
+                    data-i18n-placeholder="city_placeholder"
+                    placeholder="Введіть назву міста"
+                  >
+                  <span class="form-error" id="cityError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="address" class="form-label">
+                    <span data-i18n="address">Адреса доставки</span>
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="address"
+                    name="address"
+                    data-i18n-placeholder="address_placeholder"
+                    placeholder="Вулиця, будинок, квартира"
+                  >
+                  <span class="form-error" id="addressError"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="form-section">
+              <div class="section-header">
+                <h2 class="section-title">
+                  <i class="fas fa-credit-card"></i>
+                  <span data-i18n="payment_method">Спосіб оплати</span>
+                </h2>
+              </div>
+
+              <div class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="card" checked>
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title" data-i18n="payment_card">Картою онлайн</div>
+                      <div class="option-desc" data-i18n="payment_card_desc">Visa, Mastercard</div>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="cash">
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title" data-i18n="payment_cash">Готівкою при отриманні</div>
+                      <div class="option-desc" data-i18n="payment_cash_desc">Оплата кур'єру</div>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="liqpay">
+                  <div class="option-content">
+                    <div class="option-icon">
+                      <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="option-info">
+                      <div class="option-title">LiqPay</div>
+                      <div class="option-desc" data-i18n="payment_liqpay_desc">Google Pay, Apple Pay</div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+              <div class="section-header">
+                <h2 class="section-title">
+                  <i class="fas fa-comment-alt"></i>
+                  <span data-i18n="additional_info">Додаткова інформація</span>
+                </h2>
+              </div>
+
+              <div class="form-group">
+                <label for="comment" class="form-label" data-i18n="comment_label">
+                  Коментар до замовлення
+                </label>
+                <textarea
+                  class="form-textarea"
+                  id="comment"
+                  name="comment"
+                  rows="4"
+                  data-i18n-placeholder="comment_placeholder"
+                  placeholder="Напишіть тут ваші побажання щодо замовлення..."
+                ></textarea>
+              </div>
+
+              <div class="form-checkbox">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="callMe" name="callMe">
+                  <span class="checkbox-custom"></span>
+                  <span data-i18n="call_me">Зателефонуйте мені для підтвердження замовлення</span>
+                </label>
+              </div>
+
+              <div class="form-checkbox">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <span class="checkbox-custom"></span>
+                  <span data-i18n="newsletter">Хочу отримувати новини та спеціальні пропозиції</span>
+                </label>
+              </div>
+
+              <div class="form-checkbox">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <span class="checkbox-custom"></span>
+                  <span>
+                    <span data-i18n="agree_with">Погоджуюсь з</span>
+                    <a href="#" data-i18n="terms_link">умовами використання</a>
+                    <span data-i18n="and">та</span>
+                    <a href="#" data-i18n="privacy_link">політикою конфіденційності</a>
+                    <span class="required">*</span>
+                  </span>
+                </label>
+                <span class="form-error" id="termsError"></span>
+              </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+              <a href="../cart/" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="back_to_cart">Назад до кошика</span>
+              </a>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitOrderBtn">
+                <span data-i18n="place_order">Оформити замовлення</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary-sidebar">
+          <div class="summary-card">
+            <h3 class="summary-title" data-i18n="your_order">Ваше замовлення</h3>
+
+            <!-- Order Items -->
+            <div class="summary-items" id="summaryItems">
+              <!-- Items will be loaded dynamically -->
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <!-- Order Total -->
+            <div class="summary-details">
+              <div class="summary-row">
+                <span data-i18n="subtotal">Вартість товарів:</span>
+                <span id="summarySubtotal">0 ₴</span>
+              </div>
+
+              <div class="summary-row">
+                <span data-i18n="delivery">Доставка:</span>
+                <span id="summaryDelivery">0 ₴</span>
+              </div>
+
+              <div class="summary-row discount-row" id="discountRow" style="display: none;">
+                <span data-i18n="discount">Знижка:</span>
+                <span class="discount" id="summaryDiscount">0 ₴</span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row summary-total">
+                <span data-i18n="total">До сплати:</span>
+                <span id="summaryTotal">0 ₴</span>
+              </div>
+            </div>
+
+            <!-- Promo Code -->
+            <div class="promo-code">
+              <h4 class="promo-title" data-i18n="promo_code_title">Промокод</h4>
+              <div class="promo-input-group">
+                <input
+                  type="text"
+                  class="promo-input"
+                  id="promoInput"
+                  placeholder="Введіть промокод"
+                  data-i18n-placeholder="promo_placeholder"
+                >
+                <button class="btn btn-secondary" id="applyPromoBtn" data-i18n="apply">
+                  Застосувати
+                </button>
+              </div>
+              <div class="promo-message" id="promoMessage"></div>
+            </div>
+
+            <!-- Guarantees -->
+            <div class="summary-guarantees">
+              <div class="guarantee-item">
+                <i class="fas fa-shield-alt"></i>
+                <span data-i18n="secure_payment">Безпечна оплата</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="fas fa-lock"></i>
+                <span data-i18n="data_protection">Захист даних</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="fas fa-headset"></i>
+                <span data-i18n="support_247">Підтримка 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechStore</span>
+            </div>
+            <p class="footer-description" data-i18n="footer_description">
+              Ваш надійний партнер у світі технологій. Якість, швидкість, доступність.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_catalog_title">Каталог</h4>
+            <ul class="footer-links">
+              <li><a href="../catalog/?category=smartphones" data-i18n="category_smartphones">Смартфони</a></li>
+              <li><a href="../catalog/?category=laptops" data-i18n="category_laptops">Ноутбуки</a></li>
+              <li><a href="../catalog/?category=headphones" data-i18n="category_headphones">Навушники</a></li>
+              <li><a href="../catalog/?category=watches" data-i18n="category_watches">Розумні годинники</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_info_title">Інформація</h4>
+            <ul class="footer-links">
+              <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+              <li><a href="#" data-i18n="footer_delivery">Доставка і оплата</a></li>
+              <li><a href="#" data-i18n="footer_warranty">Гарантія</a></li>
+              <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_contacts_title">Контакти</h4>
+            <ul class="footer-contacts">
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>0 800 123 456</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@techstore.ua</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="footer_address">м. Київ, вул. Хрещатик, 1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 TechStore. <span data-i18n="footer_rights">Всі права захищені</span>.</p>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer_privacy">Політика конфіденційності</a>
+            <a href="#" data-i18n="footer_terms">Умови використання</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p data-i18n="processing_order">Обробка замовлення...</p>
+    </div>
+  </div>
+
+    <!-- Signature -->
+  <div class="signature" aria-label="Portfolio signature" data-i18n-aria-label="aria_portfolio_signature">Mr Dep's Portfolio</div>
+
+  <script src="../assets/js/utils.js" defer></script>
+  <script src="../assets/js/product-data.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/checkout.js" defer></script>
+</body>
+</html>

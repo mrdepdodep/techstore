@@ -1,0 +1,33 @@
+{
+  "id": "acerSwiftGo14",
+  "name": {
+    "uk": "Acer Swift Go 14",
+    "en": "Acer Swift Go 14",
+    "ru": "Acer Swift Go 14"
+  },
+  "brand": "Acer",
+  "category": "laptops",
+  "price": 32999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 78,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Легкий ноутбук з OLED-дисплеєм, процесором Intel i5 та швидкою зарядкою.",
+    "en": "Lightweight laptop with OLED display, Intel i5 processor, and fast charging.",
+    "ru": "Лёгкий ноутбук с OLED-дисплеем, процессором Intel i5 и быстрой зарядкой."
+  },
+  "features": {
+    "uk": ["14” OLED", "Intel Core i5", "16 ГБ RAM", "512 ГБ SSD", "Wi-Fi 6E"],
+    "en": ["14” OLED", "Intel Core i5", "16 GB RAM", "512 GB SSD", "Wi-Fi 6E"],
+    "ru": ["14” OLED", "Intel Core i5", "16 ГБ ОЗУ", "512 ГБ SSD", "Wi-Fi 6E"]
+  },
+  "images": [
+    "../images/products/laptops/acerSwiftGo14/1.jpeg",
+    "../images/products/laptops/acerSwiftGo14/2.jpeg",
+    "../images/products/laptops/acerSwiftGo14/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "huawei_watch_gt4",
+  "name": {
+    "uk": "Huawei Watch GT 4",
+    "en": "Huawei Watch GT 4",
+    "ru": "Huawei Watch GT 4"
+  },
+  "brand": "Huawei",
+  "category": "smartwatches",
+  "price": 11999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 96,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальний годинник із тривалим часом роботи та точним моніторингом здоров’я.",
+    "en": "Premium smartwatch with long battery life and advanced health tracking.",
+    "ru": "Премиальные смарт-часы с долгим временем работы и точным мониторингом здоровья."
+  },
+  "features": {
+    "uk": ["До 14 днів роботи", "Моніторинг SpO₂", "GPS", "Водозахист 5ATM", "Bluetooth дзвінки"],
+    "en": ["Up to 14 days battery", "SpO₂ monitoring", "GPS", "5ATM water resistance", "Bluetooth calls"],
+    "ru": ["До 14 дней работы", "SpO₂", "GPS", "5ATM водозащита", "Звонки по Bluetooth"]
+  },
+  "images": [
+    "../images/products/smartwatches/huawei_watch_gt4/1.jpeg",
+    "../images/products/smartwatches/huawei_watch_gt4/2.jpeg",
+    "../images/products/smartwatches/huawei_watch_gt4/3.jpeg"
+  ]
+}

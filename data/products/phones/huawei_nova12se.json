@@ -1,0 +1,29 @@
+{
+  "id": "huawei_nova12se",
+  "name": { "uk": "Huawei Nova 12 SE", "en": "Huawei Nova 12 SE", "ru": "Huawei Nova 12 SE" },
+  "brand": "Huawei",
+  "category": "phones",
+  "price": 11999,
+  "oldPrice": 13999,
+  "discount": 14,
+  "rating": 4.6,
+  "reviews": 131,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Стильний смартфон із камерою 108 Мп і швидкою зарядкою 66 Вт.",
+    "en": "Stylish smartphone with 108 MP camera and 66W fast charging.",
+    "ru": "Стильный смартфон с камерой 108 Мп и быстрой зарядкой 66 Вт."
+  },
+  "features": {
+    "uk": ["6.67” OLED дисплей", "Snapdragon 680", "Камера 108 Мп", "66 Вт зарядка", "Батарея 4500 мА·г"],
+    "en": ["6.67” OLED display", "Snapdragon 680", "108 MP camera", "66W charging", "4500 mAh battery"],
+    "ru": ["6.67” OLED дисплей", "Snapdragon 680", "Камера 108 Мп", "66 Вт зарядка", "Батарея 4500 мА·ч"]
+  },
+  "images": [
+    "../images/products/phones/nova12se/1.jpeg",
+    "../images/products/phones/nova12se/2.jpeg",
+    "../images/products/phones/nova12se/3.jpeg"
+  ]
+}

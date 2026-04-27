@@ -1,0 +1,33 @@
+{
+  "id": "xiaomiRedmiBuds5Pro",
+  "name": {
+    "uk": "Xiaomi Redmi Buds 5 Pro",
+    "en": "Xiaomi Redmi Buds 5 Pro",
+    "ru": "Xiaomi Redmi Buds 5 Pro"
+  },
+  "brand": "Xiaomi",
+  "category": "headphones",
+  "price": 2999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.5,
+  "reviews": 203,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "TWS-навушники з гібридним шумозаглушенням та Bluetooth 5.3.",
+    "en": "TWS earbuds with hybrid ANC and Bluetooth 5.3.",
+    "ru": "TWS-наушники с гибридным ANC и Bluetooth 5.3."
+  },
+  "features": {
+    "uk": ["Гібридне ANC", "Bluetooth 5.3", "До 10 годин роботи", "USB-C зарядка"],
+    "en": ["Hybrid ANC", "Bluetooth 5.3", "Up to 10 hours playback", "USB-C charging"],
+    "ru": ["Гибридное ANC", "Bluetooth 5.3", "До 10 часов работы", "USB-C зарядка"]
+  },
+  "images": [
+    "../images/products/headphones/xiaomiRedmiBuds5Pro/1.jpeg",
+    "../images/products/headphones/xiaomiRedmiBuds5Pro/2.jpeg",
+    "../images/products/headphones/xiaomiRedmiBuds5Pro/3.jpeg"
+  ]
+}

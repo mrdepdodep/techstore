@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сторінка не знайдена. Поверніться на головну сторінку TechStore або перейдіть до каталогу товарів." data-i18n-content="meta_description_404">
+  <meta name="robots" content="noindex, follow">
+  <title data-i18n="meta_title_404">404 - TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/404.html">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Animated Background */
+    body::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .error-code {
+      font-size: 10rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #FF6B35, #4FACFE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(255, 107, 53, 0.5);
+      animation: glow 2s ease-in-out infinite;
+      line-height: 1;
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.5));
+      }
+      50% {
+        filter: drop-shadow(0 0 40px rgba(255, 107, 53, 0.8));
+      }
+    }
+
+    .error-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #f5f5f5;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .error-text {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 3rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .buttons-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(135deg, #FF6B35, #FF8052);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .home-btn:hover::before {
+      left: 100%;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(255, 107, 53, 0.6);
+    }
+
+    .home-btn:active {
+      transform: translateY(0);
+    }
+
+    .back-btn {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .icon {
+      font-size: 1.2rem;
+    }
+
+    /* Timer */
+    .redirect-timer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 6rem;
+      }
+
+      .error-title {
+        font-size: 1.5rem;
+      }
+
+      .error-text {
+        font-size: 1rem;
+      }
+
+      .home-btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+      }
+
+      .buttons-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 4rem;
+      }
+
+      .error-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="error-code">404</div>
+    <div class="error-title" data-i18n="error_404_title">Page Not Found</div>
+    <div class="error-text" data-i18n="error_404_text">
+      Вибачте, сторінка, яку ви шукаєте, не існує або була переміщена. 
+      Поверніться на головну сторінку або перейдіть назад.
+    </div>
+    
+    <div class="buttons-group">
+      <a href="./index.html" class="home-btn">
+        <span class="icon">🏠</span>
+        <span data-i18n="error_404_home_btn">Go to Home</span>
+      </a>
+      <button id="backBtn" class="home-btn back-btn">
+        <span class="icon">←</span>
+        <span data-i18n="error_404_back_btn">Go Back</span>
+      </button>
+    </div>
+
+    <div class="redirect-timer" id="timer" data-i18n-html="error_404_timer">
+      Автоматичне перенаправлення через <span id="countdown">10</span> секунд...
+    </div>
+  </div>
+
+  <script src="./assets/js/utils.js"></script>
+  <script src="./assets/js/i18n.js"></script>
+
+  <script>
+    // Auto redirect after 10 seconds
+    let countdown = 10;
+    const countdownElement = document.getElementById('countdown');
+    const timerElement = document.getElementById('timer');
+
+    const interval = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = countdown;
+      
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = './index.html';
+      }
+    }, 1000);
+
+    document.getElementById('backBtn').addEventListener('click', () => history.back());
+
+    // Optional: Cancel auto-redirect on any user interaction
+    let userInteracted = false;
+    
+    document.addEventListener('click', () => {
+      if (!userInteracted) {
+        userInteracted = true;
+        clearInterval(interval);
+        timerElement.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('keydown', () => {
+      if (!userInteracted) {
+        userInteracted = true;
+        clearInterval(interval);
+        timerElement.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

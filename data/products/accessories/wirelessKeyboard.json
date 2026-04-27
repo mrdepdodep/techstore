@@ -1,0 +1,33 @@
+{
+  "id": "wirelessKeyboard",
+  "name": {
+    "uk": "Бездротова клавіатура",
+    "en": "Wireless Keyboard",
+    "ru": "Беспроводная клавиатура"
+  },
+  "brand": "Logitech",
+  "category": "accessories",
+  "price": 2799,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 154,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Тиха бездротова клавіатура з Bluetooth-підключенням для ПК, ноутбуків і планшетів.",
+    "en": "Silent wireless keyboard with Bluetooth for PCs, laptops and tablets.",
+    "ru": "Тихая беспроводная клавиатура с Bluetooth для ПК, ноутбуков и планшетов."
+  },
+  "features": {
+    "uk": ["Bluetooth 5.1", "Тривала робота від батареї", "Тихі клавіші", "Сумісна з Windows / macOS"],
+    "en": ["Bluetooth 5.1", "Long battery life", "Quiet keys", "Compatible with Windows / macOS"],
+    "ru": ["Bluetooth 5.1", "Долгая работа от батареи", "Тихие клавиши", "Совместима с Windows / macOS"]
+  },
+  "images": [
+    "../images/products/accessories/wirelessKeyboard/1.jpeg",
+    "../images/products/accessories/wirelessKeyboard/2.jpeg",
+    "../images/products/accessories/wirelessKeyboard/3.jpeg"
+  ]
+}

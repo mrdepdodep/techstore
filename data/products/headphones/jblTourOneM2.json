@@ -1,0 +1,33 @@
+{
+  "id": "jblTourOneM2",
+  "name": {
+    "uk": "JBL Tour One M2",
+    "en": "JBL Tour One M2",
+    "ru": "JBL Tour One M2"
+  },
+  "brand": "JBL",
+  "category": "headphones",
+  "price": 10999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.5,
+  "reviews": 57,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Повнорозмірні навушники з адаптивним шумозаглушенням та 40-годинною автономністю.",
+    "en": "Over-ear headphones with adaptive ANC and 40-hour battery life.",
+    "ru": "Полноразмерные наушники с адаптивным ANC и 40-часовой автономностью."
+  },
+  "features": {
+    "uk": ["Adaptive ANC", "Bluetooth 5.3", "До 40 годин автономності", "Сумісність з Google Assistant"],
+    "en": ["Adaptive ANC", "Bluetooth 5.3", "Up to 40h battery", "Google Assistant compatible"],
+    "ru": ["Adaptive ANC", "Bluetooth 5.3", "До 40 ч автономности", "Совместим с Google Assistant"]
+  },
+  "images": [
+    "../images/products/headphones/jblTourOneM2/1.jpeg",
+    "../images/products/headphones/jblTourOneM2/2.jpeg",
+    "../images/products/headphones/jblTourOneM2/3.jpeg"
+  ]
+}

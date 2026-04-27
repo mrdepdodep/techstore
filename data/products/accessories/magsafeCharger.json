@@ -1,0 +1,33 @@
+{
+  "id": "magsafeCharger",
+  "name": {
+    "uk": "MagSafe Зарядний пристрій",
+    "en": "MagSafe Charger",
+    "ru": "MagSafe Зарядное устройство"
+  },
+  "brand": "Apple",
+  "category": "accessories",
+  "price": 2499,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.6,
+  "reviews": 56,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Бездротова зарядка MagSafe з магнітним кріпленням для iPhone і AirPods.",
+    "en": "Wireless MagSafe charger with magnetic alignment for iPhone and AirPods.",
+    "ru": "Беспроводное зарядное устройство MagSafe с магнитным креплением для iPhone и AirPods."
+  },
+  "features": {
+    "uk": ["Потужність 15 Вт", "Сумісність з iPhone 12+", "USB-C кабель у комплекті", "Магнітне кріплення"],
+    "en": ["15W power output", "Compatible with iPhone 12+", "USB-C cable included", "Magnetic alignment"],
+    "ru": ["Мощность 15 Вт", "Совместимость с iPhone 12+", "Кабель USB-C в комплекте", "Магнитное крепление"]
+  },
+  "images": [
+    "../images/products/accessories/magsafeCharger/1.jpeg",
+    "../images/products/accessories/magsafeCharger/2.jpeg",
+    "../images/products/accessories/magsafeCharger/3.jpeg"
+  ]
+}

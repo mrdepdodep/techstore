@@ -1,0 +1,33 @@
+{
+  "id": "vaioZ2024",
+  "name": {
+    "uk": "Sony VAIO Z 2024",
+    "en": "Sony VAIO Z 2024",
+    "ru": "Sony VAIO Z 2024"
+  },
+  "brand": "Sony",
+  "category": "laptops",
+  "price": 84999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 55,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Ультралегкий ноутбук преміум-класу з вуглецевим корпусом та Intel Core i9 14-го покоління.",
+    "en": "Premium ultra-light laptop with carbon fiber body and Intel Core i9 14th gen.",
+    "ru": "Премиум ультралегкий ноутбук с корпусом из углеродного волокна и Intel Core i9 14-го поколения."
+  },
+  "features": {
+    "uk": ["14” 4K HDR", "Intel Core i9-14900H", "32 ГБ RAM", "1 ТБ SSD", "1 кг вага"],
+    "en": ["14” 4K HDR", "Intel Core i9-14900H", "32 GB RAM", "1 TB SSD", "1 kg weight"],
+    "ru": ["14” 4K HDR", "Intel Core i9-14900H", "32 ГБ ОЗУ", "1 ТБ SSD", "1 кг вес"]
+  },
+  "images": [
+    "../images/products/laptops/vaioZ2024/1.jpeg",
+    "../images/products/laptops/vaioZ2024/2.jpeg",
+    "../images/products/laptops/vaioZ2024/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "garmin_venu3",
+  "name": {
+    "uk": "Garmin Venu 3",
+    "en": "Garmin Venu 3",
+    "ru": "Garmin Venu 3"
+  },
+  "brand": "Garmin",
+  "category": "smartwatches",
+  "price": 19999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.9,
+  "reviews": 141,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Спортивний годинник з підтримкою GPS, тренувань і голосових команд.",
+    "en": "Sport smartwatch with GPS, workouts, and voice commands support.",
+    "ru": "Спортивные смарт-часы с GPS, тренировками и голосовыми командами."
+  },
+  "features": {
+    "uk": ["AMOLED-дисплей", "GPS", "Пульсометр", "Wi-Fi", "Мікрофон і динамік"],
+    "en": ["AMOLED display", "GPS", "Heart rate", "Wi-Fi", "Microphone & speaker"],
+    "ru": ["AMOLED-дисплей", "GPS", "Пульс", "Wi-Fi", "Микрофон и динамик"]
+  },
+  "images": [
+    "../images/products/smartwatches/garmin_venu3/1.jpeg",
+    "../images/products/smartwatches/garmin_venu3/2.jpeg",
+    "../images/products/smartwatches/garmin_venu3/3.jpeg"
+  ]
+}

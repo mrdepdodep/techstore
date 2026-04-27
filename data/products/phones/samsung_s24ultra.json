@@ -1,0 +1,29 @@
+{
+  "id": "samsung_s24ultra",
+  "name": { "uk": "Samsung Galaxy S24 Ultra", "en": "Samsung Galaxy S24 Ultra", "ru": "Samsung Galaxy S24 Ultra" },
+  "brand": "Samsung",
+  "category": "phones",
+  "price": 51999,
+  "oldPrice": 51999,
+  "discount": null,
+  "rating": 4.9,
+  "reviews": 312,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Флагман Samsung із камерою 200 Мп, стилусом S Pen і дисплеєм Dynamic AMOLED 2X.",
+    "en": "Samsung flagship with 200 MP camera, S Pen, and Dynamic AMOLED 2X display.",
+    "ru": "Флагман Samsung с камерой 200 Мп, стилусом S Pen и экраном Dynamic AMOLED 2X."
+  },
+  "features": {
+    "uk": ["6.8” QHD+ 120 Гц дисплей", "Snapdragon 8 Gen 3", "Камера 200 Мп", "S Pen", "Підтримка 5G"],
+    "en": ["6.8” QHD+ 120Hz display", "Snapdragon 8 Gen 3", "200 MP camera", "S Pen", "5G support"],
+    "ru": ["6.8” QHD+ 120 Гц дисплей", "Snapdragon 8 Gen 3", "Камера 200 Мп", "S Pen", "Поддержка 5G"]
+  },
+  "images": [
+    "../images/products/phones/s24ultra/1.jpeg",
+    "../images/products/phones/s24ultra/2.jpeg",
+    "../images/products/phones/s24ultra/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "samsung_watch6_classic",
+  "name": {
+    "uk": "Samsung Galaxy Watch 6 Classic",
+    "en": "Samsung Galaxy Watch 6 Classic",
+    "ru": "Samsung Galaxy Watch 6 Classic"
+  },
+  "brand": "Samsung",
+  "category": "smartwatches",
+  "price": 14999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 73,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальний годинник із сталевим корпусом і обертовим безелем.",
+    "en": "Premium smartwatch with stainless steel frame and rotating bezel.",
+    "ru": "Премиальные смарт-часы с корпусом из стали и вращающимся безелем."
+  },
+  "features": {
+    "uk": ["Обертальний безель", "AMOLED-дисплей", "Samsung Pay", "GPS", "Пульсометр"],
+    "en": ["Rotating bezel", "AMOLED display", "Samsung Pay", "GPS", "Heart rate sensor"],
+    "ru": ["Вращающийся безель", "AMOLED-дисплей", "Samsung Pay", "GPS", "Пульсометр"]
+  },
+  "images": [
+    "../images/products/smartwatches/samsung_watch6_classic/1.jpeg",
+    "../images/products/smartwatches/samsung_watch6_classic/2.jpeg",
+    "../images/products/smartwatches/samsung_watch6_classic/3.jpeg"
+  ]
+}

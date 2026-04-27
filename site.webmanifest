@@ -1,0 +1,22 @@
+{
+  "name": "TechStore",
+  "short_name": "TechStore",
+  "description": "Portfolio electronics e-commerce website",
+  "start_url": "/techstore/",
+  "scope": "/techstore/",
+  "display": "standalone",
+  "background_color": "#0A0A1A",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "/techstore/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/techstore/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

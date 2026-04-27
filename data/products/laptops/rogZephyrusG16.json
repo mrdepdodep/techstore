@@ -1,0 +1,33 @@
+{
+  "id": "rogZephyrusG16",
+  "name": {
+    "uk": "Asus ROG Zephyrus G16",
+    "en": "Asus ROG Zephyrus G16",
+    "ru": "Asus ROG Zephyrus G16"
+  },
+  "brand": "Asus",
+  "category": "laptops",
+  "price": 73999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.9,
+  "reviews": 188,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Ігровий ноутбук з RTX 4080, QHD+ дисплеєм 240 Гц та процесором Intel i9.",
+    "en": "Gaming laptop with RTX 4080, QHD+ 240Hz display, and Intel i9 processor.",
+    "ru": "Игровой ноутбук с RTX 4080, QHD+ 240Гц дисплеем и процессором Intel i9."
+  },
+  "features": {
+    "uk": ["16” QHD+ 240 Гц", "Intel Core i9", "32 ГБ RAM", "1 ТБ SSD", "RTX 4080"],
+    "en": ["16” QHD+ 240Hz", "Intel Core i9", "32 GB RAM", "1 TB SSD", "RTX 4080"],
+    "ru": ["16” QHD+ 240Гц", "Intel Core i9", "32 ГБ ОЗУ", "1 ТБ SSD", "RTX 4080"]
+  },
+  "images": [
+    "../images/products/laptops/rogZephyrusG16/1.jpeg",
+    "../images/products/laptops/rogZephyrusG16/2.jpeg",
+    "../images/products/laptops/rogZephyrusG16/3.jpeg"
+  ]
+}

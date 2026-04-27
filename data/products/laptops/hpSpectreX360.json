@@ -1,0 +1,33 @@
+{
+  "id": "hpSpectreX360",
+  "name": {
+    "uk": "HP Spectre x360 14",
+    "en": "HP Spectre x360 14",
+    "ru": "HP Spectre x360 14"
+  },
+  "brand": "HP",
+  "category": "laptops",
+  "price": 51999,
+  "oldPrice": 55999,
+  "discount": 7,
+  "rating": 4.7,
+  "reviews": 99,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "2-в-1 ноутбук із сенсорним OLED-дисплеєм, стилусом і процесором Intel i7.",
+    "en": "2-in-1 laptop with touchscreen OLED display, stylus, and Intel i7 processor.",
+    "ru": "2-в-1 ноутбук с сенсорным OLED-дисплеем, стилусом и процессором Intel i7."
+  },
+  "features": {
+    "uk": ["14” OLED сенсорний", "Intel Core i7", "16 ГБ RAM", "512 ГБ SSD", "Підтримка стилуса"],
+    "en": ["14” OLED touchscreen", "Intel Core i7", "16 GB RAM", "512 GB SSD", "Stylus support"],
+    "ru": ["14” OLED сенсорный", "Intel Core i7", "16 ГБ ОЗУ", "512 ГБ SSD", "Поддержка стилуса"]
+  },
+  "images": [
+    "../images/products/laptops/hpSpectreX360/1.jpeg",
+    "../images/products/laptops/hpSpectreX360/2.jpeg",
+    "../images/products/laptops/hpSpectreX360/3.jpeg"
+  ]
+}

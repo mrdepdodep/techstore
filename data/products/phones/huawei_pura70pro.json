@@ -1,0 +1,29 @@
+{
+  "id": "huawei_pura70pro",
+  "name": { "uk": "Huawei Pura 70 Pro", "en": "Huawei Pura 70 Pro", "ru": "Huawei Pura 70 Pro" },
+  "brand": "Huawei",
+  "category": "phones",
+  "price": 38999,
+  "oldPrice": 38999,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 95,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Флагман Huawei із камерою XMAGE, дисплеєм LTPO OLED і великим акумулятором.",
+    "en": "Huawei flagship with XMAGE camera, LTPO OLED display, and large battery.",
+    "ru": "Флагман Huawei с камерой XMAGE, LTPO OLED экраном и большим аккумулятором."
+  },
+  "features": {
+    "uk": ["6.8” LTPO OLED 120 Гц", "Kirin 9010", "Камера XMAGE 50 Мп", "Батарея 5050 мА·г", "100 Вт зарядка"],
+    "en": ["6.8” LTPO OLED 120Hz", "Kirin 9010", "XMAGE 50 MP camera", "5050 mAh", "100W charging"],
+    "ru": ["6.8” LTPO OLED 120 Гц", "Kirin 9010", "Камера XMAGE 50 Мп", "5050 мА·ч", "100 Вт зарядка"]
+  },
+  "images": [
+    "../images/products/phones/pura70pro/1.jpeg",
+    "../images/products/phones/pura70pro/2.jpeg",
+    "../images/products/phones/pura70pro/3.jpeg"
+  ]
+}

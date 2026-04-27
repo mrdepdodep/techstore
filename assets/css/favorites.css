@@ -1,0 +1,166 @@
+/* ============================================
+   TechStore - Favorites Page Styles
+   Midnight Indigo Design System
+   ============================================ */
+
+/* ============================================
+   Page Layout
+   ============================================ */
+.favorites-section {
+  padding: var(--spacing-xl) 0 var(--spacing-2xl);
+  min-height: calc(100vh - var(--header-height));
+  background: var(--bg-secondary);
+}
+
+/* ============================================
+   Page Header
+   ============================================ */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.page-header .page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.page-header .page-title i {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #EF4444, #F59E0B);
+  color: white;
+  border-radius: var(--radius-md);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.3);
+}
+
+/* Clear Favorites button */
+#clearFavoritesBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.55rem 1.25rem !important;
+  border: 1.5px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+  background: transparent !important;
+  border-radius: var(--radius-full) !important;
+  font-size: var(--font-size-sm) !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: var(--transition-base) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#clearFavoritesBtn:hover {
+  border-color: var(--danger-color) !important;
+  color: var(--danger-color) !important;
+  background: rgba(239, 68, 68, 0.06) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ============================================
+   Favorites Count Badge
+   ============================================ */
+.favorites-info {
+  margin-bottom: var(--spacing-lg);
+}
+
+.favorites-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.favorites-count strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* ============================================
+   Empty State
+   ============================================ */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-2xl);
+  min-height: 500px;
+}
+
+.empty-icon {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(245, 158, 11, 0.08));
+  border: 2px dashed rgba(239, 68, 68, 0.25);
+  border-radius: var(--radius-full);
+  font-size: 3.5rem;
+  color: #EF4444;
+  opacity: 0.75;
+}
+
+.empty-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.empty-text {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+.empty-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============================================
+   Recommended Section
+   ============================================ */
+.recommended-section {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.recommended-section .section-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-primary);
+}

@@ -1,0 +1,33 @@
+{
+  "id": "huawei_fit3",
+  "name": {
+    "uk": "Huawei Fit 3",
+    "en": "Huawei Fit 3",
+    "ru": "Huawei Fit 3"
+  },
+  "brand": "Huawei",
+  "category": "smartwatches",
+  "price": 5499,
+  "oldPrice": 5999,
+  "discount": 8,
+  "rating": 4.6,
+  "reviews": 64,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Компактний фітнес-годинник із квадратним дисплеєм і моніторингом активності.",
+    "en": "Compact fitness smartwatch with square display and activity tracking.",
+    "ru": "Компактные фитнес-часы с квадратным экраном и мониторингом активности."
+  },
+  "features": {
+    "uk": ["1.82” AMOLED-дисплей", "Вага 26 г", "Пульс і сон", "Bluetooth 5.2", "До 10 днів роботи"],
+    "en": ["1.82” AMOLED display", "26 g weight", "Heart rate & sleep", "Bluetooth 5.2", "10 days battery"],
+    "ru": ["1.82” AMOLED-дисплей", "26 г", "Пульс и сон", "Bluetooth 5.2", "10 дней работы"]
+  },
+  "images": [
+    "../images/products/smartwatches/huawei_fit3/1.jpeg",
+    "../images/products/smartwatches/huawei_fit3/2.jpeg",
+    "../images/products/smartwatches/huawei_fit3/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "apple_watch9",
+  "name": {
+    "uk": "Apple Watch Series 9",
+    "en": "Apple Watch Series 9",
+    "ru": "Apple Watch Series 9"
+  },
+  "brand": "Apple",
+  "category": "smartwatches",
+  "price": 19999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 162,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Смарт-годинник з чипом S9, яскравим дисплеєм і підтримкою жестового керування.",
+    "en": "Smartwatch with S9 chip, bright display, and gesture control support.",
+    "ru": "Смарт-часы с чипом S9, ярким дисплеем и поддержкой управления жестами."
+  },
+  "features": {
+    "uk": ["Дисплей Retina", "До 18 годин автономності", "Пульсометр", "Кисень у крові", "Підтримка Siri"],
+    "en": ["Retina display", "Up to 18 hours battery", "Heart rate sensor", "Blood oxygen app", "Siri integration"],
+    "ru": ["Дисплей Retina", "До 18 часов автономности", "Датчик пульса", "Кислород в крови", "Siri"]
+  },
+  "images": [
+    "../images/products/smartwatches/apple_watch9/1.jpeg",
+    "../images/products/smartwatches/apple_watch9/2.jpeg",
+    "../images/products/smartwatches/apple_watch9/3.jpeg"
+  ]
+}

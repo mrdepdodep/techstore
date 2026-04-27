@@ -1,0 +1,33 @@
+{
+  "id": "usbCHub",
+  "name": {
+    "uk": "USB-C Хаб 6-в-1",
+    "en": "USB-C Hub 6-in-1",
+    "ru": "USB-C Хаб 6-в-1"
+  },
+  "brand": "Baseus",
+  "category": "accessories",
+  "price": 1899,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 231,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Багатофункціональний USB-C хаб з HDMI, SD, USB-A та зарядкою PD.",
+    "en": "Multifunctional USB-C hub with HDMI, SD, USB-A and PD charging.",
+    "ru": "Многофункциональный USB-C хаб с HDMI, SD, USB-A и PD зарядкой."
+  },
+  "features": {
+    "uk": ["6 портів", "Передача даних до 5 Гб/с", "Сумісність з MacBook, Windows", "Підтримка 4K HDMI"],
+    "en": ["6 ports", "Data transfer up to 5 Gbps", "Compatible with MacBook, Windows", "4K HDMI support"],
+    "ru": ["6 портов", "Передача данных до 5 Гбит/с", "Совместим с MacBook, Windows", "Поддержка 4K HDMI"]
+  },
+  "images": [
+    "../images/products/accessories/usbCHub/1.jpeg",
+    "../images/products/accessories/usbCHub/2.jpeg",
+    "../images/products/accessories/usbCHub/3.jpeg"
+  ]
+}

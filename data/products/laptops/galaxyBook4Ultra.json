@@ -1,0 +1,33 @@
+{
+  "id": "galaxyBook4Ultra",
+  "name": {
+    "uk": "Samsung Galaxy Book4 Ultra",
+    "en": "Samsung Galaxy Book4 Ultra",
+    "ru": "Samsung Galaxy Book4 Ultra"
+  },
+  "brand": "Samsung",
+  "category": "laptops",
+  "price": 78999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 86,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальний ноутбук з процесором Intel Core Ultra 9, OLED дисплеєм та NVIDIA RTX 4070.",
+    "en": "Premium laptop with Intel Core Ultra 9, OLED display, and NVIDIA RTX 4070.",
+    "ru": "Премиум ноутбук с Intel Core Ultra 9, OLED дисплеем и NVIDIA RTX 4070."
+  },
+  "features": {
+    "uk": ["16” AMOLED 3K", "Intel Core Ultra 9", "32 ГБ RAM", "1 ТБ SSD", "RTX 4070"],
+    "en": ["16” AMOLED 3K", "Intel Core Ultra 9", "32 GB RAM", "1 TB SSD", "RTX 4070"],
+    "ru": ["16” AMOLED 3K", "Intel Core Ultra 9", "32 ГБ ОЗУ", "1 ТБ SSD", "RTX 4070"]
+  },
+  "images": [
+    "../images/products/laptops/galaxyBook4Ultra/1.jpeg",
+    "../images/products/laptops/galaxyBook4Ultra/2.jpeg",
+    "../images/products/laptops/galaxyBook4Ultra/3.jpeg"
+  ]
+}

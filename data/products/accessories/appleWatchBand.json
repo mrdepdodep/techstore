@@ -1,0 +1,33 @@
+{
+  "id": "appleWatchBand",
+  "name": {
+    "uk": "Ремінець для Apple Watch (силіконовий)",
+    "en": "Apple Watch Silicone Band",
+    "ru": "Ремешок для Apple Watch (силиконовый)"
+  },
+  "brand": "Apple",
+  "category": "accessories",
+  "price": 1499,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 88,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "М’який силіконовий ремінець для Apple Watch, стійкий до зносу та вологи.",
+    "en": "Soft silicone Apple Watch band resistant to wear and moisture.",
+    "ru": "Мягкий силиконовый ремешок для Apple Watch, устойчивый к износу и влаге."
+  },
+  "features": {
+    "uk": ["Сумісність з усіма моделями Apple Watch", "Силіконовий матеріал", "Комфортна посадка", "Регульований розмір"],
+    "en": ["Compatible with all Apple Watch models", "Silicone material", "Comfortable fit", "Adjustable size"],
+    "ru": ["Совместим со всеми моделями Apple Watch", "Силиконовый материал", "Комфортная посадка", "Регулируемый размер"]
+  },
+  "images": [
+    "../images/products/accessories/appleWatchBand/1.jpeg",
+    "../images/products/accessories/appleWatchBand/2.jpeg",
+    "../images/products/accessories/appleWatchBand/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "macbookProM3Max",
+  "name": {
+    "uk": "MacBook Pro M3 Max",
+    "en": "MacBook Pro M3 Max",
+    "ru": "MacBook Pro M3 Max"
+  },
+  "brand": "Apple",
+  "category": "laptops",
+  "price": 99999,
+  "oldPrice": 109999,
+  "discount": 9,
+  "rating": 4.9,
+  "reviews": 154,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Потужний ноутбук для професіоналів з чіпом M3 Max, 16.2” дисплеєм і неймовірною продуктивністю.",
+    "en": "Powerful professional laptop with M3 Max chip, 16.2” display, and exceptional performance.",
+    "ru": "Мощный ноутбук для профессионалов с чипом M3 Max, 16.2” дисплеем и высокой производительностью."
+  },
+  "features": {
+    "uk": ["16.2” Liquid Retina XDR", "Чип M3 Max", "32 ГБ RAM", "1 ТБ SSD", "Підсвічена клавіатура"],
+    "en": ["16.2” Liquid Retina XDR", "M3 Max chip", "32 GB RAM", "1 TB SSD", "Backlit keyboard"],
+    "ru": ["16.2” Liquid Retina XDR", "Чип M3 Max", "32 ГБ ОЗУ", "1 ТБ SSD", "Подсветка клавиатуры"]
+  },
+  "images": [
+    "../images/products/laptops/macbookProM3Max/1.jpeg",
+    "../images/products/laptops/macbookProM3Max/2.jpeg",
+    "../images/products/laptops/macbookProM3Max/3.jpeg"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "xiaomi14",
+  "name": { "uk": "Xiaomi 14", "en": "Xiaomi 14", "ru": "Xiaomi 14" },
+  "brand": "Xiaomi",
+  "category": "phones",
+  "price": 32999,
+  "oldPrice": 32999,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 257,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальний смартфон із Leica камерами, процесором Snapdragon 8 Gen 3 і дисплеєм AMOLED.",
+    "en": "Premium smartphone with Leica cameras, Snapdragon 8 Gen 3, and AMOLED display.",
+    "ru": "Премиум-смартфон с камерами Leica, Snapdragon 8 Gen 3 и AMOLED экраном."
+  },
+  "features": {
+    "uk": ["6.36” AMOLED 120 Гц", "Snapdragon 8 Gen 3", "Камера Leica 50 Мп", "5000 мА·г", "120 Вт зарядка"],
+    "en": ["6.36” AMOLED 120Hz", "Snapdragon 8 Gen 3", "Leica 50 MP camera", "5000 mAh", "120W charging"],
+    "ru": ["6.36” AMOLED 120 Гц", "Snapdragon 8 Gen 3", "Камера Leica 50 Мп", "5000 мА·ч", "120 Вт зарядка"]
+  },
+  "images": [
+    "../images/products/phones/xiaomi14/1.jpeg",
+    "../images/products/phones/xiaomi14/2.jpeg",
+    "../images/products/phones/xiaomi14/3.jpeg"
+  ]
+}

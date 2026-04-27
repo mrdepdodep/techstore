@@ -1,0 +1,33 @@
+{
+  "id": "matebookXPro2024",
+  "name": {
+    "uk": "Huawei MateBook X Pro 2024",
+    "en": "Huawei MateBook X Pro 2024",
+    "ru": "Huawei MateBook X Pro 2024"
+  },
+  "brand": "Huawei",
+  "category": "laptops",
+  "price": 63999,
+  "oldPrice": 68999,
+  "discount": 7,
+  "rating": 4.7,
+  "reviews": 72,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальний ультрабук з OLED-екраном, процесором Intel i7 і корпусом з магнієвого сплаву.",
+    "en": "Premium ultrabook with OLED display, Intel i7 processor, and magnesium alloy body.",
+    "ru": "Премиум ультрабук с OLED-экраном, процессором Intel i7 и корпусом из магниевого сплава."
+  },
+  "features": {
+    "uk": ["14.2” OLED 3.1K", "Intel Core i7", "16 ГБ RAM", "1 ТБ SSD", "Швидка зарядка 90 Вт"],
+    "en": ["14.2” OLED 3.1K", "Intel Core i7", "16 GB RAM", "1 TB SSD", "90W fast charging"],
+    "ru": ["14.2” OLED 3.1K", "Intel Core i7", "16 ГБ ОЗУ", "1 ТБ SSD", "Быстрая зарядка 90 Вт"]
+  },
+  "images": [
+    "../images/products/laptops/matebookXPro2024/1.jpeg",
+    "../images/products/laptops/matebookXPro2024/2.jpeg",
+    "../images/products/laptops/matebookXPro2024/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "galaxyWatch6",
+  "name": {
+    "uk": "Samsung Galaxy Watch 6",
+    "en": "Samsung Galaxy Watch 6",
+    "ru": "Samsung Galaxy Watch 6"
+  },
+  "brand": "Samsung",
+  "category": "smartwatches",
+  "price": 12999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 84,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Розумний годинник з AMOLED-екраном, контролем сну та датчиком серцевого ритму.",
+    "en": "Smartwatch with AMOLED display, sleep tracking, and heart rate sensor.",
+    "ru": "Умные часы с AMOLED-дисплеем, контролем сна и датчиком сердечного ритма."
+  },
+  "features": {
+    "uk": ["AMOLED-дисплей 1.5”", "Bluetooth 5.3", "Вимірювання пульсу та SpO₂", "Samsung Pay", "До 40 годин роботи"],
+    "en": ["1.5” AMOLED display", "Bluetooth 5.3", "Heart rate & SpO₂ tracking", "Samsung Pay", "Up to 40 hours battery"],
+    "ru": ["1.5” AMOLED-дисплей", "Bluetooth 5.3", "Отслеживание пульса и SpO₂", "Samsung Pay", "До 40 часов работы"]
+  },
+  "images": [
+    "../images/products/smartwatches/galaxyWatch6/1.jpeg",
+    "../images/products/smartwatches/galaxyWatch6/2.jpeg",
+    "../images/products/smartwatches/galaxyWatch6/3.jpeg"
+  ]
+}

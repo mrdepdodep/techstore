@@ -1,0 +1,33 @@
+{
+  "id": "macbookAirM3",
+  "name": {
+    "uk": "MacBook Air M3",
+    "en": "MacBook Air M3",
+    "ru": "MacBook Air M3"
+  },
+  "brand": "Apple",
+  "category": "laptops",
+  "price": 61999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.8,
+  "reviews": 97,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Новий MacBook Air M3 з процесором Apple Silicon третього покоління та до 18 годин автономної роботи.",
+    "en": "New MacBook Air M3 with third-generation Apple Silicon and up to 18 hours of battery life.",
+    "ru": "Новый MacBook Air M3 с процессором Apple Silicon третьего поколения и до 18 часов работы."
+  },
+  "features": {
+    "uk": ["13.6” Liquid Retina дисплей", "Процесор Apple M3", "8 ГБ RAM", "256 ГБ SSD", "Touch ID"],
+    "en": ["13.6” Liquid Retina display", "Apple M3 chip", "8 GB RAM", "256 GB SSD", "Touch ID"],
+    "ru": ["13.6” Liquid Retina дисплей", "Чип Apple M3", "8 ГБ ОЗУ", "256 ГБ SSD", "Touch ID"]
+  },
+  "images": [
+    "../images/products/laptops/macbookAirM3/1.jpeg",
+    "../images/products/laptops/macbookAirM3/2.jpeg",
+    "../images/products/laptops/macbookAirM3/3.jpeg"
+  ]
+}

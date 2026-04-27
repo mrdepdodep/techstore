@@ -1,0 +1,33 @@
+{
+  "id": "amazfit_balance",
+  "name": {
+    "uk": "Amazfit Balance",
+    "en": "Amazfit Balance",
+    "ru": "Amazfit Balance"
+  },
+  "brand": "Amazfit",
+  "category": "smartwatches",
+  "price": 8999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.7,
+  "reviews": 78,
+  "isNew": true,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Мультифункціональний годинник з GPS, NFC та датчиком стресу.",
+    "en": "Multifunctional smartwatch with GPS, NFC, and stress tracking.",
+    "ru": "Многофункциональные смарт-часы с GPS, NFC и отслеживанием стресса."
+  },
+  "features": {
+    "uk": ["AMOLED 1.5”", "GPS", "NFC", "Моніторинг сну", "Водозахист 5ATM"],
+    "en": ["1.5” AMOLED", "GPS", "NFC", "Sleep tracking", "5ATM water resistance"],
+    "ru": ["1.5” AMOLED", "GPS", "NFC", "Сон", "5ATM водозащита"]
+  },
+  "images": [
+    "../images/products/smartwatches/amazfit_balance/1.jpeg",
+    "../images/products/smartwatches/amazfit_balance/2.jpeg",
+    "../images/products/smartwatches/amazfit_balance/3.jpeg"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "sonyWH1000XM5",
+  "name": {
+    "uk": "Sony WH-1000XM5",
+    "en": "Sony WH-1000XM5",
+    "ru": "Sony WH-1000XM5"
+  },
+  "brand": "Sony",
+  "category": "headphones",
+  "price": 18999,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.9,
+  "reviews": 231,
+  "isNew": false,
+  "isHot": true,
+  "inStock": true,
+  "description": {
+    "uk": "Преміальні навушники з активним шумозаглушенням та підтримкою Hi-Res Audio.",
+    "en": "Premium headphones with active noise cancellation and Hi-Res Audio support.",
+    "ru": "Премиальные наушники с активным шумоподавлением и поддержкой Hi-Res Audio."
+  },
+  "features": {
+    "uk": ["Шумозаглушення нового покоління", "До 30 годин роботи", "Bluetooth 5.2", "USB-C зарядка", "Сенсорне керування"],
+    "en": ["Next-gen noise cancellation", "Up to 30 hours battery", "Bluetooth 5.2", "USB-C charging", "Touch controls"],
+    "ru": ["Новое шумоподавление", "До 30 часов работы", "Bluetooth 5.2", "Зарядка USB-C", "Сенсорное управление"]
+  },
+  "images": [
+    "../images/products/headphones/sonyWH1000XM5/1.jpeg",
+    "../images/products/headphones/sonyWH1000XM5/2.jpeg",
+    "../images/products/headphones/sonyWH1000XM5/3.jpeg"
+  ]
+}

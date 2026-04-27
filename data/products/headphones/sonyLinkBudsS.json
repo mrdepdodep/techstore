@@ -1,0 +1,33 @@
+{
+  "id": "sonyLinkBudsS",
+  "name": {
+    "uk": "Sony LinkBuds S",
+    "en": "Sony LinkBuds S",
+    "ru": "Sony LinkBuds S"
+  },
+  "brand": "Sony",
+  "category": "headphones",
+  "price": 7499,
+  "oldPrice": 8999,
+  "discount": 17,
+  "rating": 4.6,
+  "reviews": 128,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Легкі бездротові навушники з підтримкою шумозаглушення та режимом прозорості.",
+    "en": "Lightweight wireless earbuds with ANC and transparency mode.",
+    "ru": "Легкие беспроводные наушники с ANC и режимом прозрачности."
+  },
+  "features": {
+    "uk": ["ANC + Ambient Mode", "Bluetooth 5.2", "IPX4 захист", "До 6 годин автономності"],
+    "en": ["ANC + Ambient Mode", "Bluetooth 5.2", "IPX4 water resistance", "Up to 6 hours battery"],
+    "ru": ["ANC + Ambient Mode", "Bluetooth 5.2", "IPX4 защита", "До 6 часов автономности"]
+  },
+  "images": [
+    "../images/products/headphones/sonyLinkBudsS/1.jpeg",
+    "../images/products/headphones/sonyLinkBudsS/2.jpeg",
+    "../images/products/headphones/sonyLinkBudsS/3.jpeg"
+  ]
+}

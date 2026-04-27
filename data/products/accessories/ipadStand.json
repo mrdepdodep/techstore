@@ -1,0 +1,33 @@
+{
+  "id": "ipadStand",
+  "name": {
+    "uk": "Підставка для iPad",
+    "en": "iPad Stand",
+    "ru": "Подставка для iPad"
+  },
+  "brand": "UGREEN",
+  "category": "accessories",
+  "price": 899,
+  "oldPrice": null,
+  "discount": null,
+  "rating": 4.4,
+  "reviews": 37,
+  "isNew": false,
+  "isHot": false,
+  "inStock": true,
+  "description": {
+    "uk": "Регульована металева підставка для планшетів і смартфонів.",
+    "en": "Adjustable metal stand for tablets and smartphones.",
+    "ru": "Регулируемая металлическая подставка для планшетов и смартфонов."
+  },
+  "features": {
+    "uk": ["Металевий корпус", "Складана конструкція", "Регулювання кута нахилу"],
+    "en": ["Metal body", "Foldable design", "Adjustable angle"],
+    "ru": ["Металлический корпус", "Складная конструкция", "Регулировка угла наклона"]
+  },
+  "images": [
+    "../images/products/accessories/ipadStand/1.jpeg",
+    "../images/products/accessories/ipadStand/2.jpeg",
+    "../images/products/accessories/ipadStand/2.jpeg"
+  ]
+}

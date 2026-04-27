@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Порівняння товарів TechStore: ціни, характеристики, фото та рекомендації." data-i18n-content="meta_description_compare">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#6366F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="TechStore">
+  <meta property="og:title" content="Порівняння товарів — TechStore">
+  <meta property="og:description" content="Порівнюйте характеристики, ціну та переваги товарів TechStore.">
+  <meta property="og:url" content="https://mrdepdodep.github.io/techstore/compare/">
+  <meta property="og:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Порівняння товарів TechStore">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Порівняння товарів — TechStore">
+  <meta name="twitter:description" content="Зручна таблиця порівняння товарів: ціна, рейтинг, характеристики.">
+  <meta name="twitter:image" content="https://mrdepdodep.github.io/techstore/favicon.png">
+  <meta name="twitter:image:alt" content="Порівняння товарів TechStore">
+  <meta name="author" content="Mykola — frelancer-web-dev">
+  <title data-i18n="meta_title_compare">Порівняння товарів | TechStore</title>
+  <link rel="canonical" href="https://mrdepdodep.github.io/techstore/compare/">
+  <link rel="alternate" hreflang="uk" href="https://mrdepdodep.github.io/techstore/compare/">
+  <link rel="alternate" hreflang="en" href="https://mrdepdodep.github.io/techstore/compare/">
+  <link rel="alternate" hreflang="ru" href="https://mrdepdodep.github.io/techstore/compare/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/compare.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+  <header class="header">
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main-content">
+          <a href="../" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechStore</span>
+          </a>
+
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Пошук товарів..."
+                   data-i18n-placeholder="search_placeholder" id="searchInput">
+            <button class="search-btn" id="searchBtn" aria-label="Search" data-i18n-aria-label="aria_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="header-actions">
+            <div class="language-switcher">
+              <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="language">укр</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="language-dropdown" id="languageDropdown">
+                <button data-lang="uk">Українська</button>
+                <button data-lang="en">English</button>
+                <button data-lang="ru">Русский</button>
+              </div>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria-label="aria_theme_toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+
+          <nav class="header-nav">
+            <button class="nav-icon" id="compareHeaderBtn" aria-label="Порівняння" data-i18n-aria-label="aria_compare">
+              <i class="fas fa-scale-balanced"></i>
+              <span class="badge" id="compareCount">0</span>
+            </button>
+            <a href="../favorites/" class="nav-icon">
+              <i class="fas fa-heart"></i>
+              <span class="badge" id="favoritesCount">0</span>
+            </a>
+            <a href="../cart/" class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cartCount">0</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" data-i18n-aria-label="aria_open_menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../" data-i18n="nav_home">Головна</a></li>
+          <li><a href="../catalog/" data-i18n="nav_catalog">Каталог</a></li>
+          <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+          <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../" data-i18n="nav_home">Головна</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li data-i18n="compare_breadcrumb">Порівняння</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="compare-section">
+    <div class="container">
+      <div class="compare-header">
+        <h1 data-i18n="compare_title">Порівняння товарів</h1>
+        <p data-i18n="compare_subtitle">Додай 2-3 товари та порівняй характеристики, ціну і переваги</p>
+      </div>
+
+      <div id="compareEmptyState" class="compare-empty-state">
+        <div class="empty-icon"><i class="fas fa-scale-balanced"></i></div>
+        <h2 data-i18n="compare_empty_title">Список порівняння порожній</h2>
+        <p data-i18n="compare_empty_text">Додай товари на сторінці товару кнопкою "Порівняти".</p>
+        <a class="btn btn-primary" href="../catalog/">
+          <i class="fas fa-grid-2"></i>
+          <span data-i18n="compare_go_catalog">Перейти в каталог</span>
+        </a>
+      </div>
+
+      <div id="compareContent" class="compare-content hidden">
+        <div class="compare-cards" id="compareCards"></div>
+        <div class="compare-warning hidden" id="compareWarning"></div>
+
+        <div class="compare-table-wrap">
+          <table class="compare-table" id="compareTable"></table>
+        </div>
+
+        <div class="compare-insights">
+          <h2 data-i18n="compare_insights_title">Хто в чому кращий</h2>
+          <div class="insights-grid" id="compareInsights"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechStore</span>
+            </div>
+            <p class="footer-description" data-i18n="footer_description">
+              Ваш надійний партнер у світі технологій. Якість, швидкість, доступність.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_catalog_title">Каталог</h4>
+            <ul class="footer-links">
+              <li><a href="../catalog/?category=smartphones" data-i18n="category_smartphones">Смартфони</a></li>
+              <li><a href="../catalog/?category=laptops" data-i18n="category_laptops">Ноутбуки</a></li>
+              <li><a href="../catalog/?category=headphones" data-i18n="category_headphones">Навушники</a></li>
+              <li><a href="../catalog/?category=watches" data-i18n="category_watches">Розумні годинники</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_info_title">Інформація</h4>
+            <ul class="footer-links">
+              <li><a href="../about/" data-i18n="nav_about">Про нас</a></li>
+              <li><a href="../contacts/" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title" data-i18n="footer_contacts_title">Контакти</h4>
+            <ul class="footer-contacts">
+              <li><i class="fas fa-phone"></i><span>0 800 123 456</span></li>
+              <li><i class="fas fa-envelope"></i><span>info@techstore.ua</span></li>
+              <li><i class="fas fa-map-marker-alt"></i><span data-i18n="footer_address">м. Київ, вул. Хрещатик, 1</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="signature" aria-label="Portfolio signature" data-i18n-aria-label="aria_portfolio_signature">Mr Dep's Portfolio</div>
+
+  <script src="../assets/js/utils.js" defer></script>
+  <script src="../assets/js/product-data.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/theme.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/compare.js" defer></script>
+</body>
+</html>

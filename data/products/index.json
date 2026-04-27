@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-10T18:26:25.112Z",
+  "products": [
+    {
+      "category": "accessories",
+      "id": "airpodsProCase",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "appleWatchBand",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "ipadStand",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "lightningCable",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "magsafeCharger",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "mousePad",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "usbCHub",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "webcam1080p",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "wirelessKeyboard",
+      "featured": false
+    },
+    {
+      "category": "accessories",
+      "id": "wirelessMouse",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "ankerSoundcoreLifeQ35",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "appleAirPodsPro2",
+      "featured": true
+    },
+    {
+      "category": "headphones",
+      "id": "boseQuietComfort45",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "huaweiFreeBudsPro3",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "jblTourOneM2",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "samsungGalaxyBuds3",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "sennheiserMomentum4",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "sonyLinkBudsS",
+      "featured": false
+    },
+    {
+      "category": "headphones",
+      "id": "sonyWH1000XM5",
+      "featured": true
+    },
+    {
+      "category": "headphones",
+      "id": "xiaomiRedmiBuds5Pro",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "acerSwiftGo14",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "galaxyBook4Ultra",
+      "featured": true
+    },
+    {
+      "category": "laptops",
+      "id": "hpSpectreX360",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "macbookAirM3",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "macbookProM3Max",
+      "featured": true
+    },
+    {
+      "category": "laptops",
+      "id": "matebookXPro2024",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "redmibookPro15",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "rogZephyrusG16",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "thinkpadX1CarbonGen12",
+      "featured": false
+    },
+    {
+      "category": "laptops",
+      "id": "vaioZ2024",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "huawei_nova12se",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "huawei_pura70pro",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "iphone15",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "iphone15pro",
+      "featured": true
+    },
+    {
+      "category": "phones",
+      "id": "samsung_a55",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "samsung_s24ultra",
+      "featured": true
+    },
+    {
+      "category": "phones",
+      "id": "sony_xperia10vi",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "sony_xperia1v",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "xiaomi14",
+      "featured": false
+    },
+    {
+      "category": "phones",
+      "id": "xiaomi14tpro",
+      "featured": true
+    },
+    {
+      "category": "smartwatches",
+      "id": "amazfit_balance",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "apple_watch9",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "apple_watch_ultra2",
+      "featured": true
+    },
+    {
+      "category": "smartwatches",
+      "id": "galaxyWatch6",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "garmin_venu3",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "huawei_fit3",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "huawei_watch_gt4",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "samsung_watch6_classic",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "sony_wena3",
+      "featured": false
+    },
+    {
+      "category": "smartwatches",
+      "id": "xiaomi_watch_s3",
+      "featured": false
+    }
+  ]
+}
